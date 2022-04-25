@@ -1,0 +1,124 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-reward-points-registration" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-reward-points-registration" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-customer-group">{{ entry_customer_group }}</label>
+            <div class="col-sm-10">
+              <select name="module_reward_points_registration_customer_group" id="input-customer-group" class="form-control">
+                <option value="">{{ text_all }}</option>
+                {% for customer_group in customer_groups %}
+                {% if customer_group.customer_group_id == module_reward_points_registration_customer_group %}
+                <option value="{{ customer_group.customer_group_id }}" selected="selected">{{ customer_group.name }}</option>
+                {% else %}
+                <option value="{{ customer_group.customer_group_id }}">{{ customer_group.name }}</option>
+                {% endif %}
+                {% endfor %}
+              </select>
+            </div>  
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-catalog"><span data-toggle="tooltip" title="{{ help_catalog }}">{{ entry_catalog }}</span></label>
+            <div class="col-sm-10">
+              <select name="module_reward_points_registration_catalog" id="input-catalog" class="form-control">
+                {% if module_reward_points_registration_catalog %}
+                <option value="1" selected="selected">{{ text_yes }}</option>
+                <option value="0">{{ text_no }}</option>
+                {% else %}
+                <option value="1">{{ text_yes }}</option>
+                <option value="0" selected="selected">{{ text_no }}</option>
+                {% endif %}
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="reward-points"><span data-toggle="tooltip" title="{{ help_points_catalog }}">{{ entry_points_catalog }}</span></label>
+            <div class="col-sm-10">
+              <input type="text" name="module_reward_points_registration_points_catalog" value="{{ module_reward_points_registration_points_catalog }}" placeholder="{{ entry_points_catalog }}" id="input-points" class="form-control" />
+              {% if error_points_catalog %}
+                <div class="text-danger">{{ error_points_catalog }}</div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="reward-description"><span data-toggle="tooltip" title="{{ help_description_catalog }}">{{ entry_description_catalog }}</span></label>
+            <div class="col-sm-10">
+              <input type="text" name="module_reward_points_registration_description_catalog" value="{{ module_reward_points_registration_description_catalog }}" placeholder="{{ entry_description_catalog }}" id="input-points" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-admin_reward_points"><span data-toggle="tooltip" title="{{ help_admin }}">{{ entry_admin}}</span></label>
+            <div class="col-sm-10">
+              <select name="module_reward_points_registration_admin" id="input-admin_reward_points" class="form-control">
+                {% if module_reward_points_registration_admin %}
+                <option value="1" selected="selected">{{ text_yes }}</option>
+                <option value="0">{{ text_no }}</option>
+                {% else %}
+                <option value="1">{{ text_yes }}</option>
+                <option value="0" selected="selected">{{ text_no }}</option>
+                {% endif %}
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="reward-points-on-singup"><span data-toggle="tooltip" title="{{ help_points_admin }}">{{ entry_points_admin }}</span></label>
+            <div class="col-sm-10">
+              <input type="text" name="module_reward_points_registration_points_admin" value="{{ module_reward_points_registration_points_admin }}" placeholder="{{ entry_points_admin }}" id="input-points-on-singup" class="form-control" />
+              {% if error_points_admin%}
+                <div class="text-danger">{{ error_points_admin }}</div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="reward-description-on-singup"><span data-toggle="tooltip" title="{{ help_description_admin }}">{{ entry_description_admin }}</span></label>
+            <div class="col-sm-10">
+              <input type="text" name="module_reward_points_registration_description_admin" value="{{ module_reward_points_registration_description_admin }}" placeholder="{{ entry_description_admin }}" id="input-points-on-singup" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+            <div class="col-sm-10">
+              <select name="module_reward_points_registration_status" id="input-status" class="form-control">
+                {% if module_reward_points_registration_status %}
+                <option value="1" selected="selected">{{ text_enabled }}</option>
+                <option value="0">{{ text_disabled }}</option>
+                {% else %}
+                <option value="1">{{ text_enabled }}</option>
+                <option value="0" selected="selected">{{ text_disabled }}</option>
+                {% endif %}
+              </select>
+            </div>
+          </div>
+          <div class="text-center">
+            by <a href="https://www.koku-scripts.com" target="_blank">KOKU SCRIPTS</a><br>
+            <a href="https://www.koku-scripts.com/contact/opencart-extension-support/reward-points-on-registration-opencart" target="_blank">Get support</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{ footer }}

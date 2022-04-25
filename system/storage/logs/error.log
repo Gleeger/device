@@ -1,0 +1,56 @@
+2021-09-28 8:32:55 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-28 8:32:55 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-28 8:33:15 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-28 8:33:15 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-28 10:30:11 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-28 10:35:55 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-28 10:36:46 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-28 10:36:46 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 7:07:14 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 7:07:14 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 7:32:58 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 7:44:50 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 7:47:45 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 7:53:07 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 7:53:07 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 7:53:35 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 8:05:07 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 8:14:57 - <a href="http://devicetest.gleegertestflight.com/login?verifytoken=297aa2faa6d4ff05f24618b5bc6041">http://devicetest.gleegertestflight.com/login?verifytoken=297aa2faa6d4ff05f24618b5bc6041</a>
+2021-09-29 8:14:57 - customer_id=53
+2021-09-29 8:15:16 - <a href="http://devicetest.gleegertestflight.com/login?verifytoken=9d980992cecf42439519624bde69e0">http://devicetest.gleegertestflight.com/login?verifytoken=9d980992cecf42439519624bde69e0</a>
+2021-09-29 8:15:16 - customer_id=54
+2021-09-29 8:56:51 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 10:13:03 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 10:13:03 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 10:26:28 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 10:37:11 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 10:37:11 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 10:40:23 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 10:40:23 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 10:57:58 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 11:08:57 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 11:08:57 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 11:09:53 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 11:23:53 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 11:23:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-29 11:34:51 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 11:55:57 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 11:59:30 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-29 12:31:46 - <a href="http://devicetest.gleegertestflight.com/login?verifytoken=ca73cdeefb425f214d06b7dd1c1cc5">http://devicetest.gleegertestflight.com/login?verifytoken=ca73cdeefb425f214d06b7dd1c1cc5</a>
+2021-09-29 12:31:46 - customer_id=55
+2021-09-30 5:31:19 - PHP Notice:  Undefined variable: filter_custverf in /var/www/html/storage/modification/admin/controller/customer/customer.php on line 1469
+2021-09-30 5:31:20 - PHP Notice:  Undefined variable: filter_custverf in /var/www/html/storage/modification/admin/controller/customer/customer.php on line 1469
+2021-09-30 5:31:42 - PHP Notice:  Undefined variable: filter_custverf in /var/www/html/storage/modification/admin/controller/customer/customer.php on line 1469
+2021-09-30 5:31:43 - PHP Notice:  Undefined variable: filter_custverf in /var/www/html/storage/modification/admin/controller/customer/customer.php on line 1469
+2021-09-30 5:31:43 - PHP Notice:  Undefined variable: filter_custverf in /var/www/html/storage/modification/admin/controller/customer/customer.php on line 1469
+2021-09-30 5:58:25 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-30 6:29:45 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-30 6:53:19 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-09-30 9:57:53 - PHP Notice:  Undefined index: sheet in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-30 9:57:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-09-30 10:13:05 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/device/system/library/omise-php/lib/omise/res/OmiseApiResource.php on line 251
+2021-10-01 4:06:03 - PHP Notice:  Undefined index: header in /var/www/html/device/system/library/shared/tcpdf/include/tcpdf.EasyTable.php on line 180
+2021-10-01 4:06:03 - PHP Notice:  Undefined index: header in /var/www/html/device/system/library/shared/tcpdf/include/tcpdf.EasyTable.php on line 182
+2021-10-01 4:06:03 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/device/system/library/shared/tcpdf/include/tcpdf.EasyTable.php on line 229
+2021-10-01 10:16:34 - PHP Notice:  Undefined index: sheet in /home/devicestore/public_html/admin/controller/extension/module/d_seo_module.php on line 3536
+2021-10-01 10:16:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/devicestore/public_html/admin/controller/extension/module/d_seo_module.php on line 3536

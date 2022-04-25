@@ -1,0 +1,200 @@
+<!-- Include Omise's javascript -->
+<script type="text/javascript">
+    $.getScript("https://cdn.omise.co/omise.min.js.gz", function() {
+        Omise.setPublicKey("{{ omise.pkey }}");
+
+        $("#omise-form-checkout").submit(function() {
+   
+            var form            = $(this),
+                alertSuccess    = form.find(".alert-success"),
+                alertError      = form.find(".alert-error"),
+                spinner         = form.find('.omise-submitting');
+
+            // Show spinner icon.
+            spinner.addClass('loading');
+
+            // Hidden alert box
+            alertError.removeClass('show');
+            alertSuccess.removeClass('show');
+
+            // Disable the submit button to avoid repeated click.
+            form.find("input[type=submit]").prop("disabled", true);
+
+            // Serialize the form fields into a valid card object.
+            var card = {
+                "name": form.find("[data-omise=holder_name]").val(),
+                "number": form.find("[data-omise=number]").val(),
+                "expiration_month": form.find("[data-omise=expiration_month]").val(),
+                "expiration_year": form.find("[data-omise=expiration_year]").val(),
+                "security_code": form.find("[data-omise=security_code]").val()
+            };
+
+            // Send a request to create a token 
+            // then trigger the callback function once a response is received from Omise.
+            // * Note that the response could be an error and this needs to be handled
+            // * within the callback.
+            Omise.createToken("card", card, function (statusCode, response) {
+                // If has an error (can not create a card's token).
+                if (response.object == "error") {
+                    // Display an error message.
+                    alertError.html("Omise Response: "+response.message).addClass('show');
+
+                    // Re-enable the submit button.
+                    form.find("input[type=submit]").prop("disabled", false);
+                } else if (typeof response.card != 'undefined' && !response.card.security_code_check) {
+                    // Display an error message.
+                    alertError.html("Omise Response: Card authorization failure.").addClass('show');
+
+                    // Re-enable the submit button.
+                    form.find("input[type=submit]").prop("disabled", false);
+                } else {
+                    $("#input-omise-token").val(response.id);
+
+                    // Token was created. Then, charge a card with token.
+                    var posting = $.post("{{ checkout_url }}", {
+                        "omise_token": response.id,
+                        "description": "Charge a card from OpenCart that order id is {{ orderid }} from {{ billemail }}"
+                    });
+
+                    posting
+                        .done(function(resp) {
+                            resp = JSON.parse(resp);
+
+                            if (typeof resp === "object") {
+                                if (typeof resp.error !== "undefined") {
+                                    alertError.html(resp.error).addClass('show');
+                                } else {
+                                    if (typeof resp.redirect !== "undefined") {
+                                        console.log('redirect');
+                                        window.location = resp.redirect;
+                                    } else {
+                                        form.get(0).submit();
+                                    }
+                                }
+                            }
+
+                            form.find("input[type=submit]").prop("disabled", false);
+                        })
+                        .fail(function(jqXHR, textStatus, errorThrown) {
+                            alertError.html("Omise "+errorThrown).addClass('show');
+                            form.find("input[type=submit]").prop("disabled", false);
+                        });
+                };
+
+                spinner.removeClass('loading');
+            });
+
+            // Prevent the form from being submitted;
+            return false;
+        });
+    });
+</script>
+
+<!-- Omise's checkout form -->
+<form id="omise-form-checkout" method="post" action="{{ success_url }}">
+    <!-- Collect a customer's card -->
+    <div class="omise-payment">
+        <h3>{{ text_card_information }}</h3>
+
+        <div class="alert alert-danger alert-box alert-error warning"></div>
+        <div class="alert alert-box alert-success success"></div>
+
+        <input type="hidden" id="input-omise-token" name="omise_token" class="input-omise-token">
+
+        <!-- Card Holder Name -->
+        <div class="row">
+            <div class="col-md-6 bacot">
+                <div class="form-group">
+                    <label for="input-omise-cardname">{{ text_card_holder_name }}</label>
+                    <input id="input-omise-cardname" type="text" data-omise="holder_name" value="" class="form-control input-omise-collect-holder-name">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Card Number -->
+            <div class="col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="input-omise-cardnumber">{{ text_card_number }}</label>
+                    <input id="input-omise-cardnumber" type="text" data-omise="number" value="" class="form-control input-omise-collect-number">
+                </div>
+            </div>
+
+            <!-- Expiration date -->
+            <div class="col-sm-6 col-md-3">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>{{ text_month }}</label>
+                            <select data-omise="expiration_month" class="form-control input-omise-collect-expiration-month"> >
+                                {% for k,v in loop_months %}
+                                	<option value="{{ k }}">{{ v }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>{{ text_year }}</label>
+                            <select data-omise="expiration_year" class="form-control input-omise-collect-expiration-year">
+                                {% for k,v in loop_years %}
+                                    <option value="{{ k }}">{{ v }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-2">
+                <!-- Security Code -->
+                <div class="form-group">
+                    <label>{{ text_security_code }}</label>
+                    <input type="password" data-omise="security_code" size="8" value="" class="form-control input-omise-collect-security-code">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="buttons">
+        <div class="pull-right">
+            <i class="omise-submitting fa fa-spinner fa-spin"></i>
+            &nbsp;
+            <input type="submit" value="{{ button_confirm }}" class="button btn btn-primary btn-checkout" />
+        </div>
+    </div>
+
+    <!-- OpenCart's hidden input -->
+    <input type="hidden" name="text_config_one" value="{{ text_config_one }}" />
+    <input type="hidden" name="text_config_two" value="{{ text_config_two }}" />
+    <input type="hidden" name="orderid" value="{{ orderid }}" />
+    <input type="hidden" name="callbackurl" value="{{ callbackurl }}" />
+    <input type="hidden" name="orderdate" value="{{ orderdate }}" />
+    <input type="hidden" name="currency" value="{{ currency }}" />
+    <input type="hidden" name="orderamount" value="{{ orderamount }}" />
+    <input type="hidden" name="billemail" value="{{ billemail }}" />
+    <input type="hidden" name="billphone" value="{{ billphone }}" />
+    <input type="hidden" name="billaddress" value="{{ billaddress }}" />
+    <input type="hidden" name="billcountry" value="{{ billcountry }}" />
+    <input type="hidden" name="billprovince" value="{{ billprovince }}" />
+    <input type="hidden" name="billcity" value="{{ billcity }}" />
+    <input type="hidden" name="billpost" value="{{ billpost }}" />
+    <input type="hidden" name="deliveryname" value="{{ deliveryname }}" />
+    <input type="hidden" name="deliveryaddress" value="{{ deliveryaddress }}" />
+    <input type="hidden" name="deliverycity" value="{{ deliverycity }}" />
+    <input type="hidden" name="deliverycountry" value="{{ deliverycountry }}" />
+    <input type="hidden" name="deliveryprovince" value="{{ deliveryprovince }}" />
+    <input type="hidden" name="deliveryemail" value="{{ deliveryemail }}" />
+    <input type="hidden" name="deliveryphone" value="{{ deliveryphone }}" />
+    <input type="hidden" name="deliverypost" value="{{ deliverypost }}" />
+</form>
+
+
+<style>
+#collapse-checkout-confirm                 { position: relative; }
+form#omise-form-checkout .alert-box        { display: none; }
+form#omise-form-checkout .show             { display: block !important; }
+form#omise-form-checkout .loading          { display: inline-block !important; }
+form#omise-form-checkout .omise-submitting { display: none; }
+</style>
