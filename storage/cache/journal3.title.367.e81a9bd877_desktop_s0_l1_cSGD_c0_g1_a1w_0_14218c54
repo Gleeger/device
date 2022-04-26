@@ -1,0 +1,53 @@
+<?php $val = array (
+  'css' => '.module-title-367 .title-wrapper
+h3{font-family:\'Nunito Sans\';font-weight:800;font-size:37px;color:rgba(0, 68, 149, 1)}.module-title-367 .title-wrapper
+.subtitle{font-family:\'Nunito Sans\';font-weight:400;font-size:14px;color:rgba(117,117,117,1);text-align:justify}.module-title-367{margin-right:85px}.module-title-367 .title-wrapper::before{opacity:.05;display:block}.module-title-367 .title-wrapper{text-align:left}.module-title-367 .title-divider{margin-left:0;margin-right:auto}@media (max-width: 414px){.module-title-367{margin-right:20px}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'type' => 'custom',
+    'title' => '',
+    'subtitle' => 'Device Electronics was founded in 1978 as a distributor and agent for active and passive components. Customers’ satisfaction is demonstrated through our team of highly competent sales and technical support, dedicated to building and maintaining a long-term mutually beneficial relationship.
+</br>
+</br>
+Over the years, we seized the opportunity to extend our distribution business in Enterprise Network Infrastructure. Today, we are a preferred distribution partner for Panduit Enterprise Network Solutions and Products.
+</br>
+</br>
+Our customers include Contractors, System Integrators, Consultants, as well and covering sectors in Information and Communications Technology (ICT) and Data Networks industries. We ensure our customers are fully satisfied. Our products are competitive with guaranteed service quality.
+</br>
+</br>
+We are embarking on the journey of digitization as part of our technology transformation. This is an important influencing factor in the new era as we are moving into digital landscape in e-commerce platform to enhance productivity and service support.',
+    'status' => true,
+    'id' => 'title-6266e0c1de77a',
+    'module_id' => 367,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-title',
+      2 => 'module-title-367',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

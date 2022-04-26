@@ -1,0 +1,23 @@
+<?php $val = array (
+  'category_id' => '66',
+  'parent_id' => '0',
+  'title' => 'Copper Patch Cords',
+  'items' => 
+  array (
+  ),
+  'classes' => 
+  array (
+    0 => 'menu-item menu-item-c66',
+    'dropdown' => 
+    array (
+    ),
+  ),
+  'link' => 
+  array (
+    'href' => 'https://device-electronics.com/copper-patch-cords',
+    'total' => '12',
+    'classes' => 
+    array (
+    ),
+  ),
+);

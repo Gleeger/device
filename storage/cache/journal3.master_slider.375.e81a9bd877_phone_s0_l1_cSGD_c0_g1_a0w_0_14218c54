@@ -1,0 +1,531 @@
+<?php $val = array (
+  'css' => '.module-master_slider-375 .ms-view{overflow:initial}.module-master_slider-375 .static-text-1{top:0;left:0;right:auto;bottom:auto;transform:none}.module-master_slider-375 .static-text-1
+span{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-375 .static-text-2{top:auto;left:0;right:auto;bottom:0;transform:translate3d(0, 0, 0)}.module-master_slider-375 .static-text-2
+span{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider>img{width:100%}.desktop .module-master_slider-375 .ms-nav-next{opacity:0}.desktop .module-master_slider-375 .ms-nav-prev{opacity:0}.desktop .module-master_slider-375 .ms-container:hover .ms-nav-next{opacity:1}.desktop .module-master_slider-375 .ms-container:hover .ms-nav-prev{opacity:1}.module-master_slider-375 .ms-nav-next{display:flex;left:auto;right:0;top:50%;bottom:auto;transform:translateY(-50%)}.module-master_slider-375 .ms-nav-prev{display:flex;left:0;right:auto;top:50%;bottom:auto;transform:translateY(-50%)}.module-master_slider-375 .ms-nav-next::before, .module-master_slider-375 .ms-nav-prev::before{content:\'\\e93f\' !important;font-family:icomoon !important;font-size:20px;color:rgba(181, 181, 181, 1)}.desktop .module-master_slider-375 .ms-nav-next:hover::before, .desktop .module-master_slider-375 .ms-nav-prev:hover::before{color:rgba(0, 68, 149, 1)}.module-master_slider-375 .ms-nav-next, .module-master_slider-375 .ms-nav-prev{width:40px;height:40px;background:none}.module-master_slider-375 .ms-nav-next:hover, .module-master_slider-375 .ms-nav-prev:hover{background:none}.module-master_slider-375 .ms-bullets{display:block;top:auto;bottom:0;left:50%;right:auto;transform:translateX(-50%);;margin-top:20px;margin-bottom:20px}.module-master_slider-375 .ms-bullets .ms-bullets-count{flex-direction:row}.module-master_slider-375 .ms-bullets .ms-bullet{margin:calc(15px / 2) !important;background:rgba(255, 255, 255, 1);border-radius:10px}.module-master_slider-375 .ms-bullet{width:7px;height:7px}.desktop .module-master_slider-375 .ms-bullets .ms-bullet:hover, .module-master_slider-375 .ms-bullets .ms-bullet-selected{background:rgba(0, 68, 149, 1)}.module-master_slider-375 .ms-thumb-list{display:block;padding:10px
+0;top:auto !important;bottom:0 !important;order:2}.module-master_slider-375 .ms-thumb-list .ms-thumb-frame{margin-right:10px !important;opacity: .75}.module-master_slider-375 .ms-thumb-frame{border-width:0px}.module-master_slider-375 .ms-timerbar{display:block;top:0 !important;bottom:auto !important}.module-master_slider-375 .master-slider .ms-time-bar{background-color:rgba(240, 101, 101, 1) !important;height:1px !important}.module-master_slider-375 .journal-loading>i::before{content:none !important}@media (max-width: 1024px){.module-master_slider-375 .ms-nav-next{display:none}.module-master_slider-375 .ms-nav-prev{display:none}.module-master_slider-375 .ms-bullets{margin-left:15px;margin-right:15px;margin-top:15px;margin-bottom:15px}}@media (max-width: 760px){.module-master_slider-375 .ms-bullets{top:auto;bottom:0;left:50%;right:auto;transform:translateX(-50%)}.module-master_slider-375 .ms-bullets .ms-bullets-count{flex-direction:row}.module-master_slider-375 .ms-bullet{width:7px;height:7px}}.module-master_slider-375 .module-item-1{background:none}.module-master_slider-375 .module-item-1 .module-subitem-1.ms-layer-hotspot .ms-point-center{width:20px;height:20px}.module-master_slider-375 .module-item-1 .module-subitem-1{display:block;visibility:visible !important}.module-master_slider-375 .module-item-1 .module-subitem-1.ms-layer-button{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-375 .module-item-1 .module-subitem-1.ms-caption{font-family:\'Nunito Sans\';font-weight:400;font-size:50px;color:rgba(255, 255, 255, 1);line-height:1.1;padding-bottom:20px;font-size:50px}.module-master_slider-375 .module-item-1 .module-subitem-1.ms-layer-text::before{color:rgba(255, 255, 255, 1)}.module-master_slider-375 .module-item-1 .module-subitem-1.ms-layer-image{font-size:13px;color:rgba(255, 255, 255, 1);font-weight:700;text-transform:uppercase;padding:8px;padding-top:5px;padding-bottom:5px;border-radius:3px}.module-master_slider-375 .module-item-1 .module-subitem-1.ms-layer-video{width:400px;height:225px}@media (max-width: 414px){.module-master_slider-375 .module-item-1 .module-subitem-1.ms-caption{font-size:29px;padding-bottom:50px}}.module-master_slider-375 .module-item-1 .module-subitem-3.ms-layer-hotspot .ms-point-center{width:20px;height:20px}.module-master_slider-375 .module-item-1 .module-subitem-3{display:block;visibility:visible !important}.module-master_slider-375 .module-item-1 .module-subitem-3.ms-layer-button{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-375 .module-item-1 .module-subitem-3.ms-caption{width:100%;font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(77, 77, 77, 1);text-align:center}.module-master_slider-375 .module-item-1 .module-subitem-3.ms-layer-text::before{color:rgba(255, 255, 255, 1)}.module-master_slider-375 .module-item-1 .module-subitem-3.ms-layer-video{width:400px;height:225px}@media (max-width: 414px){.module-master_slider-375 .module-item-1 .module-subitem-3.ms-caption{font-family:\'Nunito Sans\';font-weight:400;font-size:15px}}.module-master_slider-375 .module-item-1 .module-subitem-4.ms-layer-hotspot .ms-point-center{width:20px;height:20px}.module-master_slider-375 .module-item-1 .module-subitem-4{display:block;visibility:visible !important}.module-master_slider-375 .module-item-1 .module-subitem-4.ms-layer-button{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-375 .module-item-1 .module-subitem-4.ms-layer-button.btn{border-radius:0px !important}.module-master_slider-375 .module-item-1 .module-subitem-4.ms-caption{font-family:\'Nunito Sans\';font-weight:400;font-size:50px;color:rgba(255, 255, 255, 1);line-height:1.1;padding-bottom:20px}.module-master_slider-375 .module-item-1 .module-subitem-4.btn::after{content:\'\\e93f\' !important;font-family:icomoon !important;color:rgba(181, 181, 181, 1);margin-right:5px;margin-left:5px}.module-master_slider-375 .module-item-1 .module-subitem-4.btn:hover::after{color:rgba(0, 68, 149, 1) !important}.module-master_slider-375 .module-item-1 .module-subitem-4.btn, .module-master_slider-375 .module-item-1 .module-subitem-4.btn:visited{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(181, 181, 181, 1);text-transform:none;letter-spacing:0}.module-master_slider-375 .module-item-1 .module-subitem-4.btn:hover{font-family:\'Nunito Sans\' !important;font-weight:600 !important;font-size:15px !important;color:rgba(0, 68, 149, 1) !important;background:none !important}.module-master_slider-375 .module-item-1 .module-subitem-4.btn:active, .module-master_slider-375 .module-item-1 .module-subitem-4.btn:hover:active, .module-master_slider-375 .module-item-1 .module-subitem-4.btn:focus:active{color:rgba(0, 30, 67, 1) !important;background:none !important;box-shadow:none}.module-master_slider-375 .module-item-1 .module-subitem-4.btn:focus{color:rgba(240, 101, 101, 1) !important;background:none;box-shadow:none}.module-master_slider-375 .module-item-1 .module-subitem-4.btn{background:none;padding:0px;box-shadow:none;border-radius:0px !important}.desktop .module-master_slider-375 .module-item-1 .module-subitem-4.btn:hover{box-shadow:none}.module-master_slider-375 .module-item-1 .module-subitem-4.btn.btn.disabled::after{font-size:20px}.module-master_slider-375 .module-item-1 .module-subitem-4.ms-layer-video{width:400px;height:225px}@media (max-width: 414px){.module-master_slider-375 .module-item-1 .module-subitem-4.ms-layer-button{transform:scale(calc(90 / 100))}.module-master_slider-375 .module-item-1 .module-subitem-4.ms-caption{font-size:29px;padding-bottom:50px}}.module-master_slider-375 .module-item-2{background:none}.module-master_slider-375 .module-item-2 .module-subitem-1.ms-layer-hotspot .ms-point-center{width:20px;height:20px}.module-master_slider-375 .module-item-2 .module-subitem-1{display:block;visibility:visible !important}.module-master_slider-375 .module-item-2 .module-subitem-1.ms-layer-button{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-375 .module-item-2 .module-subitem-1.ms-caption{font-family:\'Nunito Sans\';font-weight:400;font-size:50px;color:rgba(255, 255, 255, 1);line-height:1.1;padding-bottom:20px;font-size:50px}.module-master_slider-375 .module-item-2 .module-subitem-1.ms-layer-text::before{color:rgba(255, 255, 255, 1)}.module-master_slider-375 .module-item-2 .module-subitem-1.ms-layer-image{font-size:13px;color:rgba(255, 255, 255, 1);font-weight:700;text-transform:uppercase;padding:8px;padding-top:5px;padding-bottom:5px;border-radius:3px}.module-master_slider-375 .module-item-2 .module-subitem-1.ms-layer-video{width:400px;height:225px}@media (max-width: 414px){.module-master_slider-375 .module-item-2 .module-subitem-1.ms-caption{font-size:29px;padding-bottom:50px}}.module-master_slider-375 .module-item-2 .module-subitem-3.ms-layer-hotspot .ms-point-center{width:20px;height:20px}.module-master_slider-375 .module-item-2 .module-subitem-3{display:block;visibility:visible !important}.module-master_slider-375 .module-item-2 .module-subitem-3.ms-layer-button{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-375 .module-item-2 .module-subitem-3.ms-caption{width:100%;font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(77, 77, 77, 1);text-align:center}.module-master_slider-375 .module-item-2 .module-subitem-3.ms-layer-text::before{color:rgba(255, 255, 255, 1)}.module-master_slider-375 .module-item-2 .module-subitem-3.ms-layer-video{width:400px;height:225px}@media (max-width: 414px){.module-master_slider-375 .module-item-2 .module-subitem-3.ms-caption{font-family:\'Nunito Sans\';font-weight:400;font-size:15px}}.module-master_slider-375 .module-item-2 .module-subitem-4.ms-layer-hotspot .ms-point-center{width:20px;height:20px}.module-master_slider-375 .module-item-2 .module-subitem-4{display:block;visibility:visible !important}.module-master_slider-375 .module-item-2 .module-subitem-4.ms-layer-button{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-375 .module-item-2 .module-subitem-4.ms-layer-button.btn{border-radius:0px !important}.module-master_slider-375 .module-item-2 .module-subitem-4.ms-caption{font-family:\'Nunito Sans\';font-weight:400;font-size:50px;color:rgba(255, 255, 255, 1);line-height:1.1;padding-bottom:20px}.module-master_slider-375 .module-item-2 .module-subitem-4.btn::after{content:\'\\e93f\' !important;font-family:icomoon !important;color:rgba(181, 181, 181, 1);margin-right:5px;margin-left:5px}.module-master_slider-375 .module-item-2 .module-subitem-4.btn:hover::after{color:rgba(0, 68, 149, 1) !important}.module-master_slider-375 .module-item-2 .module-subitem-4.btn, .module-master_slider-375 .module-item-2 .module-subitem-4.btn:visited{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(181, 181, 181, 1);text-transform:none;letter-spacing:0}.module-master_slider-375 .module-item-2 .module-subitem-4.btn:hover{font-family:\'Nunito Sans\' !important;font-weight:600 !important;font-size:15px !important;color:rgba(0, 68, 149, 1) !important;background:none !important}.module-master_slider-375 .module-item-2 .module-subitem-4.btn:active, .module-master_slider-375 .module-item-2 .module-subitem-4.btn:hover:active, .module-master_slider-375 .module-item-2 .module-subitem-4.btn:focus:active{color:rgba(0, 30, 67, 1) !important;background:none !important;box-shadow:none}.module-master_slider-375 .module-item-2 .module-subitem-4.btn:focus{color:rgba(240, 101, 101, 1) !important;background:none;box-shadow:none}.module-master_slider-375 .module-item-2 .module-subitem-4.btn{background:none;padding:0px;box-shadow:none;border-radius:0px !important}.desktop .module-master_slider-375 .module-item-2 .module-subitem-4.btn:hover{box-shadow:none}.module-master_slider-375 .module-item-2 .module-subitem-4.btn.btn.disabled::after{font-size:20px}.module-master_slider-375 .module-item-2 .module-subitem-4.ms-layer-video{width:400px;height:225px}@media (max-width: 414px){.module-master_slider-375 .module-item-2 .module-subitem-4.ms-layer-button{transform:scale(calc(90 / 100))}.module-master_slider-375 .module-item-2 .module-subitem-4.ms-caption{font-size:29px;padding-bottom:50px}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        400 => '400',
+        600 => '600',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'shuffle' => false,
+    'imageDimensions' => 
+    array (
+      'width' => 359,
+      'height' => 500,
+      'resize' => 'fill',
+    ),
+    'sliderDimensions' => 
+    array (
+      'width' => 359,
+      'height' => 500,
+      'resize' => 'fill',
+    ),
+    'parallaxMode' => true,
+    'parallax' => '35',
+    'layout' => 'autofill',
+    'layoutTablet' => '',
+    'layoutPhone' => 'autofill',
+    'bottomOffset' => '',
+    'bottomOffsetTablet' => '',
+    'bottomOffsetPhone' => '',
+    'staticTextType' => 'text',
+    'staticText' => '',
+    'staticTextLink' => 
+    array (
+      'type' => '',
+      'id' => '',
+      'href' => '',
+      'name' => '',
+      'total' => NULL,
+      'attrs' => 
+      array (
+      ),
+      'classes' => 
+      array (
+      ),
+    ),
+    'static2TextType' => 'text',
+    'static2Text' => '',
+    'static2TextLink' => 
+    array (
+      'type' => '',
+      'id' => '',
+      'href' => '',
+      'name' => '',
+      'total' => NULL,
+      'attrs' => 
+      array (
+      ),
+      'classes' => 
+      array (
+      ),
+    ),
+    'delay' => '5000',
+    'thumbnails' => false,
+    'thumbnailsDimensions' => 
+    array (
+      'width' => 50,
+      'height' => 50,
+      'resize' => 'fill',
+    ),
+    'lazyLoad' => false,
+    'status' => true,
+    'id' => 'master_slider-6266a4580ca7e',
+    'module_id' => 375,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-master_slider',
+      2 => 'module-master_slider-375',
+      'fullscreen-slider' => false,
+    ),
+    'width' => 359,
+    'height' => 500,
+    'options' => 
+    array (
+      'width' => 359,
+      'height' => 500,
+      'layout' => 'autofill',
+      'smoothHeight' => false,
+      'centerControls' => false,
+      'parallaxMode' => 'swipe',
+      'instantStartLayers' => true,
+      'loop' => true,
+      'dir' => 'h',
+      'autoHeight' => true,
+      'rtl' => false,
+      'startOnAppear' => false,
+      'autoplay' => true,
+      'overPause' => true,
+      'shuffle' => false,
+      'view' => 'mask',
+      'speed' => '30',
+      'swipe' => true,
+      'mouse' => true,
+      'controls' => 
+      array (
+        'arrows' => 
+        array (
+          'autohide' => false,
+        ),
+      ),
+    ),
+    'first_image' => 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWcAAAH0AQMAAADbhH4jAAAABlBMVEUAAAAEAgSXNbeIAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAC1JREFUeNrtwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAA8BhZ2AABRrmB3gAAAABJRU5ErkJggg==',
+    'first_alt' => '',
+    'items' => 
+    array (
+      1 => 
+      array (
+        'type' => 'custom',
+        'alt' => '',
+        'videoType' => 'html5',
+        'link' => 
+        array (
+          'type' => 'product',
+          'id' => '',
+          'href' => '',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'id' => '375-1',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-1',
+          2 => 'ms-slide',
+        ),
+        'delay' => 5.0,
+        'image' => 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWcAAAH0AQMAAADbhH4jAAAABlBMVEUAAAAEAgSXNbeIAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAC1JREFUeNrtwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAA8BhZ2AABRrmB3gAAAABJRU5ErkJggg==',
+        'image2x' => false,
+        'thumb' => false,
+        'items' => 
+        array (
+          1 => 
+          array (
+            'type' => 'image',
+            'text' => 'The Journey of Digitization',
+            'alt' => '',
+            'videoType' => 'vimeo',
+            'link' => 
+            array (
+              'type' => '',
+              'id' => '',
+              'href' => '',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'imageDimensions' => 
+            array (
+              'width' => NULL,
+              'height' => 45,
+              'resize' => 'fill',
+            ),
+            'id' => '375-1-1',
+            'classes' => 
+            array (
+              0 => 'module-subitem',
+              1 => 'module-subitem-1',
+              2 => 'ms-layer',
+              3 => 'ms-layer-image',
+              'btn' => false,
+              'no-show-effect' => false,
+              'ms-caption' => false,
+            ),
+            'data' => 
+            array (
+              0 => 'data-resize="false"',
+              1 => 'data-origin="tc"',
+              2 => 'data-parallax="0"',
+              3 => 'data-type="image"',
+              4 => 'data-position="normal"',
+              5 => 'data-effect="right(400)"',
+              6 => 'data-delay="100"',
+              7 => 'data-duration="700"',
+              8 => 'data-ease="easeOutQuart"',
+              9 => 'data-hide-effect="fade"',
+              10 => 'data-hide-delay="0"',
+              11 => 'data-hide-duration="0"',
+            ),
+            'width' => NULL,
+            'height' => 45,
+            'image' => 'https://device-electronics.com/image/cache/catalog/Logo-Panduit-Resize-183x45fill.png',
+          ),
+          3 => 
+          array (
+            'type' => 'text',
+            'text' => 'Since 1955, Panduit’s culture of curiosity and passion for problem solving have enabled more meaningful connections between companies’ business goals and their marketplace success. Panduit creates leading-edge physical, electrical, and network infrastructure solutions for enterprise-wide environments, from the data center to the telecom room, from the desktop to the plant floor.  Headquartered in Tinley Park, IL, USA and operating in 112 global locations, Panduit’s proven reputation for quality and technology leadership, coupled with a robust partner ecosystem, help support, sustain, and empower business growth in a connected world.',
+            'alt' => '',
+            'videoType' => 'html5',
+            'link' => 
+            array (
+              'type' => '',
+              'id' => '',
+              'href' => '',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'imageDimensions' => 
+            array (
+              'width' => NULL,
+              'height' => NULL,
+              'resize' => 'fill',
+            ),
+            'id' => '375-1-3',
+            'classes' => 
+            array (
+              0 => 'module-subitem',
+              1 => 'module-subitem-3',
+              2 => 'ms-layer',
+              3 => 'ms-layer-text',
+              'btn' => false,
+              'no-show-effect' => false,
+              'ms-caption' => true,
+            ),
+            'data' => 
+            array (
+              0 => 'data-resize="false"',
+              1 => 'data-origin="mc"',
+              2 => 'data-parallax="0"',
+              3 => 'data-type="text"',
+              4 => 'data-position="normal"',
+              5 => 'data-effect="right(400)"',
+              6 => 'data-delay="100"',
+              7 => 'data-duration="700"',
+              8 => 'data-ease="easeInOutQuad"',
+              9 => 'data-hide-effect="fade"',
+              10 => 'data-hide-delay="0"',
+              11 => 'data-hide-duration="0"',
+            ),
+          ),
+          4 => 
+          array (
+            'type' => 'button',
+            'text' => 'About Panduit',
+            'alt' => '',
+            'videoType' => 'html5',
+            'link' => 
+            array (
+              'type' => 'information',
+              'id' => '7',
+              'href' => 'https://device-electronics.com/panduit',
+              'name' => 'Panduit',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'imageDimensions' => 
+            array (
+              'width' => NULL,
+              'height' => NULL,
+              'resize' => 'fill',
+            ),
+            'id' => '375-1-4',
+            'classes' => 
+            array (
+              0 => 'module-subitem',
+              1 => 'module-subitem-4',
+              2 => 'ms-layer',
+              3 => 'ms-layer-button',
+              'btn' => true,
+              'no-show-effect' => false,
+              'ms-caption' => false,
+            ),
+            'data' => 
+            array (
+              0 => 'data-resize="false"',
+              1 => 'data-origin="bc"',
+              2 => 'data-parallax="0"',
+              3 => 'data-type="button"',
+              4 => 'data-position="normal"',
+              5 => 'data-effect="right(400)"',
+              6 => 'data-delay="100"',
+              7 => 'data-duration="700"',
+              8 => 'data-ease="easeOutQuart"',
+              9 => 'data-hide-effect="fade"',
+              10 => 'data-hide-delay="0"',
+              11 => 'data-hide-duration="0"',
+            ),
+          ),
+        ),
+      ),
+      2 => 
+      array (
+        'type' => 'custom',
+        'alt' => '',
+        'videoType' => 'html5',
+        'link' => 
+        array (
+          'type' => 'product',
+          'id' => '',
+          'href' => '',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'id' => '375-2',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-2',
+          2 => 'ms-slide',
+        ),
+        'delay' => 5.0,
+        'image' => 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWcAAAH0AQMAAADbhH4jAAAABlBMVEUAAAAEAgSXNbeIAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAC1JREFUeNrtwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAA8BhZ2AABRrmB3gAAAABJRU5ErkJggg==',
+        'image2x' => false,
+        'thumb' => false,
+        'items' => 
+        array (
+          1 => 
+          array (
+            'type' => 'image',
+            'text' => 'The Journey of Digitization',
+            'alt' => '',
+            'videoType' => 'vimeo',
+            'link' => 
+            array (
+              'type' => '',
+              'id' => '',
+              'href' => '',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'imageDimensions' => 
+            array (
+              'width' => NULL,
+              'height' => 52,
+              'resize' => 'fill',
+            ),
+            'id' => '375-2-1',
+            'classes' => 
+            array (
+              0 => 'module-subitem',
+              1 => 'module-subitem-1',
+              2 => 'ms-layer',
+              3 => 'ms-layer-image',
+              'btn' => false,
+              'no-show-effect' => false,
+              'ms-caption' => false,
+            ),
+            'data' => 
+            array (
+              0 => 'data-resize="false"',
+              1 => 'data-origin="tc"',
+              2 => 'data-parallax="0"',
+              3 => 'data-type="image"',
+              4 => 'data-position="normal"',
+              5 => 'data-effect="right(400)"',
+              6 => 'data-delay="100"',
+              7 => 'data-duration="700"',
+              8 => 'data-ease="easeOutQuart"',
+              9 => 'data-hide-effect="fade"',
+              10 => 'data-hide-delay="0"',
+              11 => 'data-hide-duration="0"',
+            ),
+            'width' => NULL,
+            'height' => 52,
+            'image' => 'https://device-electronics.com/image/cache/catalog/Logo-Teledyne-Resize-251x52fill.png',
+          ),
+          3 => 
+          array (
+            'type' => 'text',
+            'text' => 'Teledyne Relays is the world’s innovation leader in manufacturing ultraminiature hermetically sealed switching products, with more than 50 years heritage in military programs. The comprehensive product line meets wide-ranging requirements for the defence and aerospace markets, covering frequencies from 10MHz to 40GHz, and signal integrity up to 40Gbps. Teledyne Relays also offer high-performance solutions for industrial, professional, commercial, medical and custom switching applications.',
+            'alt' => '',
+            'videoType' => 'html5',
+            'link' => 
+            array (
+              'type' => '',
+              'id' => '',
+              'href' => '',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'imageDimensions' => 
+            array (
+              'width' => NULL,
+              'height' => NULL,
+              'resize' => 'fill',
+            ),
+            'id' => '375-2-3',
+            'classes' => 
+            array (
+              0 => 'module-subitem',
+              1 => 'module-subitem-3',
+              2 => 'ms-layer',
+              3 => 'ms-layer-text',
+              'btn' => false,
+              'no-show-effect' => false,
+              'ms-caption' => true,
+            ),
+            'data' => 
+            array (
+              0 => 'data-resize="false"',
+              1 => 'data-origin="mc"',
+              2 => 'data-parallax="0"',
+              3 => 'data-type="text"',
+              4 => 'data-position="normal"',
+              5 => 'data-effect="right(400)"',
+              6 => 'data-delay="100"',
+              7 => 'data-duration="700"',
+              8 => 'data-ease="easeInOutQuad"',
+              9 => 'data-hide-effect="fade"',
+              10 => 'data-hide-delay="0"',
+              11 => 'data-hide-duration="0"',
+            ),
+          ),
+          4 => 
+          array (
+            'type' => 'button',
+            'text' => 'About Teledyne',
+            'alt' => '',
+            'videoType' => 'html5',
+            'link' => 
+            array (
+              'type' => 'information',
+              'id' => '8',
+              'href' => 'https://device-electronics.com/teledyne',
+              'name' => 'Teledyne',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'imageDimensions' => 
+            array (
+              'width' => NULL,
+              'height' => NULL,
+              'resize' => 'fill',
+            ),
+            'id' => '375-2-4',
+            'classes' => 
+            array (
+              0 => 'module-subitem',
+              1 => 'module-subitem-4',
+              2 => 'ms-layer',
+              3 => 'ms-layer-button',
+              'btn' => true,
+              'no-show-effect' => false,
+              'ms-caption' => false,
+            ),
+            'data' => 
+            array (
+              0 => 'data-resize="false"',
+              1 => 'data-origin="bc"',
+              2 => 'data-parallax="0"',
+              3 => 'data-type="button"',
+              4 => 'data-position="normal"',
+              5 => 'data-effect="right(400)"',
+              6 => 'data-delay="100"',
+              7 => 'data-duration="700"',
+              8 => 'data-ease="easeOutQuart"',
+              9 => 'data-hide-effect="fade"',
+              10 => 'data-hide-delay="0"',
+              11 => 'data-hide-duration="0"',
+            ),
+          ),
+        ),
+      ),
+    ),
+    'first_image2x' => false,
+  ),
+);

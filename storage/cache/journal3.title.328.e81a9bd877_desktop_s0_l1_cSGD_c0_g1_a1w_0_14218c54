@@ -1,0 +1,49 @@
+<?php $val = array (
+  'css' => '.module-title-328 .title-wrapper
+h3{font-family:\'Nunito Sans\';font-weight:800;color:rgba(117, 117, 117, 1)}.module-title-328 .title-wrapper
+.subtitle{font-family:\'Nunito Sans\';font-weight:400;color:rgba(117,117,117,1)}.module-title-328{padding-right:100px}.module-title-328 .title-wrapper::before{opacity:.05;display:block}.module-title-328 .title-wrapper{text-align:left}.module-title-328 .title-divider{margin-left:0;margin-right:auto}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'type' => 'custom',
+    'title' => 'Warehouse',
+    'subtitle' => '<br>
+8 Kaki Bukit Ave 1 #01-07 
+Singapore 417941
+<br>
+<br>
+T : +65 6288 6455',
+    'status' => true,
+    'id' => 'title-626691424ecb3',
+    'module_id' => 328,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-title',
+      2 => 'module-title-328',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

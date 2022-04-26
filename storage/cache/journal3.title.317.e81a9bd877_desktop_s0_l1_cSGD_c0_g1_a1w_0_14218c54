@@ -1,0 +1,44 @@
+<?php $val = array (
+  'css' => '.module-title-317 .title-wrapper
+h3{font-family:\'Nunito Sans\';font-weight:800;font-size:29px;color:rgba(0, 68, 149, 1)}.module-title-317 .title-wrapper
+.subtitle{font-family:\'Nunito Sans\';font-weight:400;font-size:23px;color:rgba(77, 77, 77, 1)}.module-title-317 .title-wrapper::before{opacity:.05;display:block}.module-title-317 .title-wrapper{text-align:left}.module-title-317 .title-divider{margin-left:0;margin-right:auto}@media (max-width: 414px){.module-title-317{padding-bottom:30px;padding-left:0px}.module-title-317 .title-wrapper{text-align:left}.module-title-317 .title-divider{margin-left:0;margin-right:auto}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'type' => 'custom',
+    'title' => 'How can we help?',
+    'subtitle' => 'Send us a message!',
+    'status' => true,
+    'id' => 'title-626691424fced',
+    'module_id' => 317,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-title',
+      2 => 'module-title-317',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

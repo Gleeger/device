@@ -1,0 +1,113 @@
+<?php $val = array (
+  'css' => '.top-menu-240 .j-menu li.top-menu-item-4>a::before{content:\'\\ebda\' !important;font-family:icomoon !important;color:rgba(181, 181, 181, 1)}.desktop .top-menu-240 .j-menu li.top-menu-item-4:hover>a::before{color:rgba(0,68,149,1)}.top-menu-240>ul>.top-menu-item-4>a{text-align:center}.top-menu-240>ul>.top-menu-item-4>a>.links-text{display:none}.top-menu-240 > ul > .top-menu-item-4 > a .count-badge{position:absolute;top:auto;right:auto}.top-menu-240 .j-menu .j-menu li.top-menu-item-5>a::before{margin-right:7px}.top-menu-240 .j-menu .j-menu li.top-menu-item-6>a::before{margin-right:7px}',
+  'fonts' => 
+  array (
+  ),
+  'settings' => 
+  array (
+    'scheduledStatus' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'status' => true,
+    'id' => 'top-menu-62667f9332236',
+    'module_id' => 240,
+    'classes' => 
+    array (
+      0 => 'top-menu',
+      1 => 'top-menu-240',
+    ),
+    'items' => 
+    array (
+      4 => 
+      array (
+        'title' => 'Account',
+        'link' => 
+        array (
+          'type' => '',
+          'id' => '',
+          'href' => '',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'top-menu-item',
+          2 => 'top-menu-item-4',
+          'multi-level' => false,
+          'dropdown' => true,
+          'drop-menu' => true,
+          'icon-only' => true,
+        ),
+        'items' => 
+        array (
+          5 => 
+          array (
+            'title' => 'Login',
+            'link' => 
+            array (
+              'type' => 'login_popup',
+              'id' => '',
+              'href' => 'javascript:open_login_popup()',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'classes' => 
+            array (
+              0 => 'menu-item',
+              1 => 'top-menu-item-5',
+              'dropdown' => false,
+              'icon-only' => NULL,
+            ),
+            'items' => 
+            array (
+            ),
+          ),
+          6 => 
+          array (
+            'title' => 'Register',
+            'link' => 
+            array (
+              'type' => 'register_popup',
+              'id' => '',
+              'href' => 'javascript:open_register_popup()',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'classes' => 
+            array (
+              0 => 'menu-item',
+              1 => 'top-menu-item-6',
+              'dropdown' => false,
+              'icon-only' => NULL,
+            ),
+            'items' => 
+            array (
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);

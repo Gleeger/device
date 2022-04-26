@@ -1,0 +1,53 @@
+<?php $val = array (
+  'css' => '.module-notification-137{font-family:\'Nunito Sans\';font-weight:400;font-size:18px;color:rgba(240, 101, 101, 1);text-align:center;padding:20px;background:rgba(242, 242, 242, 1)}.module-notification-137
+a{font-family:\'Nunito Sans\';font-weight:800;font-size:18px;color:rgba(0, 68, 149, 1);text-decoration:underline}.module-notification-137 a:hover{color:rgba(0,30,67,1)}.module-notification-137.notification{max-width:1280px}.module-notification-137 .notification-close{padding:4px
+!important;display:none;width:50px;height:50px;margin-left:15px;margin-right:15px;margin-top:15px;margin-bottom:15px;top:0;bottom:initial;left:initial;right:0;transform:none}.module-notification-137 .notification-close::before{content:none !important}.module-notification-137 .notification-close.btn, .module-notification-137 .notification-close.btn:visited{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(255, 255, 255, 1);text-transform:none}.module-notification-137 .notification-close.btn:hover{font-family:\'Nunito Sans\' !important;font-weight:800 !important;font-size:15px !important;color:rgba(255, 255, 255, 1) !important;background:rgba(0, 30, 67, 1) !important}.module-notification-137 .notification-close.btn{background:rgba(0, 68, 149, 1);box-shadow:none}.module-notification-137 .notification-close.btn.btn.disabled::after{font-size:20px}@media (max-width: 414px){.module-notification-137{font-size:12px}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        400 => '400',
+        800 => '800',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'cookie' => 'be470792',
+    'closeButton' => true,
+    'title' => '',
+    'text' => 'The Device Rewards Points program will no longer be available by 30th June 2022. Any unredeemed points will be forfeited.',
+    'notificationCloseText' => 'OK',
+    'status' => true,
+    'id' => 'notification-6266913fee233',
+    'module_id' => 137,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-notification',
+      2 => 'module-notification-137',
+      3 => 'notification',
+    ),
+    'options' => 
+    array (
+      'position' => NULL,
+      'title' => '',
+      'cookie' => 'be470792',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

@@ -1,0 +1,46 @@
+<?php $val = array (
+  'css' => '.module-title-364 .title-wrapper
+h3{font-family:\'Nunito Sans\';font-weight:800;font-size:23px;color:rgba(117, 117, 117, 1)}.module-title-364 .title-wrapper
+.subtitle{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(117,117,117,1);text-align:justify}.module-title-364{margin-top:40px}.module-title-364 .title-wrapper::before{opacity:.05;display:block}.module-title-364 .title-wrapper{text-align:left}.module-title-364 .title-divider{margin-left:0;margin-right:auto}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'type' => 'custom',
+    'title' => 'What does it mean to be Panduit’s Authorised Distributor?',
+    'subtitle' => '</br>
+Panduit’s vision is to connect technology, systems, and people on a global scale. <br>
+That’s why Panduit teamed up with strategic partners and distributors who create value that spans the project lifecycle, from planning and design to delivery, deployment, maintenance, and operation. Their global network of distributors provides local inventory, product support, and a wide range of logistics services so customers can expect to receive exactly what they need when they need it, across the globe. Panduit partners with highly skilled installers, contractors, and system integrators who are trained and certified to design, develop, and deploy high-performing electrical and network infrastructure that drives the business of tomorrow.',
+    'status' => true,
+    'id' => 'title-6266e137289a0',
+    'module_id' => 364,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-title',
+      2 => 'module-title-364',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

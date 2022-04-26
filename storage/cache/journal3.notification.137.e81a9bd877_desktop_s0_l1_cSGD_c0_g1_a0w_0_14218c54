@@ -31,7 +31,7 @@ a{font-family:\'Nunito Sans\';font-weight:800;font-size:18px;color:rgba(0, 68, 1
     'text' => 'The Device Rewards Points program will no longer be available by 30th June 2022. Any unredeemed points will be forfeited.',
     'notificationCloseText' => 'OK',
     'status' => true,
-    'id' => 'notification-62667b086f3b3',
+    'id' => 'notification-62667eda5c0ad',
     'module_id' => 137,
     'classes' => 
     array (

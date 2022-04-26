@@ -185,7 +185,7 @@ a{font-size:15px}.module-products-354 .product-grid .product-thumb
     'moduleProductStat1' => 'brand',
     'moduleProductStat2' => 'none',
     'status' => true,
-    'id' => 'products-62667b0869f5c',
+    'id' => 'products-62667eda5a0d3',
     'module_id' => 354,
     'classes' => 
     array (

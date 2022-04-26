@@ -1,0 +1,54 @@
+<?php $val = array (
+  'css' => '.module-title-308 .title-wrapper
+h3{font-family:\'Nunito Sans\';font-weight:800;font-size:15px;color:rgba(181, 181, 181, 1)}.module-title-308 .title-wrapper
+.subtitle{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(255,255,255,1)}.module-title-308{padding-bottom:20px}.module-title-308 .title-wrapper::before{opacity:.05;display:block}.module-title-308 .title-wrapper{text-align:left}.module-title-308 .title-divider{margin-left:0;margin-right:auto}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'type' => 'custom',
+    'title' => 'Office',
+    'subtitle' => '</br>
+8 Kaki Bukit Ave 1 #01-05 
+</br>
+Singapore 417941
+</br>
+</br>
+T : +65 6288 6455
+</br>
+F : +65 6848 4284
+</br>
+E : estore@devicelect.com',
+    'status' => true,
+    'id' => 'title-626755c6d5ddf',
+    'module_id' => 308,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-title',
+      2 => 'module-title-308',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

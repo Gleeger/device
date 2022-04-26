@@ -80,7 +80,7 @@ span{color:rgba(87, 154, 193, 1)}.module-catalog-119 .subitem>a{white-space:nowr
     'carousel' => false,
     'viewMoreText' => 'See all products',
     'status' => true,
-    'id' => 'catalog-62667b089dc33',
+    'id' => 'catalog-62667eda70e3a',
     'module_id' => 119,
     'classes' => 
     array (

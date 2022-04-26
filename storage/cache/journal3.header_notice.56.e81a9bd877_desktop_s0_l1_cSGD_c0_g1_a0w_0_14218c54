@@ -44,7 +44,7 @@ a{font-family:\'Nunito Sans\';font-weight:600;font-size:15px;color:rgba(0, 68, 1
     'closeText' => '',
     'content' => '<div style=""><font face="Segoe UI, system-ui, Apple Color Emoji, Segoe UI Emoji, sans-serif">Prices shown are inclusive of <b>7%</b> GST Tax</font><br></div>',
     'status' => true,
-    'id' => 'header_notice-62667b0879647',
+    'id' => 'header_notice-62667eda5efd8',
     'module_id' => 56,
     'classes' => 
     array (

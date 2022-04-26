@@ -1,0 +1,210 @@
+<?php $val = array (
+  'css' => '.module-form-355
+label{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(77, 77, 77, 1)}.module-form-355 .form-group .control-label{max-width:150px;padding-top:7px;padding-bottom:5px;margin-bottom:20px;justify-content:flex-start}.module-form-355 .has-error .form-control{border-style:solid !important}.module-form-355 .required .control-label::after, .module-form-355 .required .control-label + div::before, .module-form-355 .text-danger{font-size:17px}.module-form-355 .form-group{margin-bottom:10px}.module-form-355 .required .control-label::after, .module-form-355 .required .control-label+div::before{margin-top:3px}.module-form-355 input.form-control{font-family:\'Nunito Sans\' !important;font-weight:400 !important;font-size:15px !important;color:rgba(77, 77, 77, 1) !important;background:rgba(255, 255, 255, 1) !important;border-width:2px !important;border-style:solid !important;border-color:rgba(226, 226, 226, 1) !important;border-radius:3px !important;max-width:500px;height:38px}.module-form-355 input.form-control:hover{font-family:\'Nunito Sans\' !important;font-weight:400 !important;font-size:15px !important;color:rgba(0, 68, 149, 1) !important;border-color:rgba(0, 68, 149, 1) !important;box-shadow:0 5px 15px -5px rgba(0, 0, 0, 0.07)}.module-form-355 input.form-control:focus, .module-form-355 input.form-control:active{border-color:rgba(0, 68, 149, 1) !important}.module-form-355 input.form-control:focus{box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.1)}.module-form-355 textarea.form-control{font-family:\'Nunito Sans\' !important;font-weight:400 !important;font-size:15px !important;color:rgba(77, 77, 77, 1) !important;background:rgba(255, 255, 255, 1) !important;border-width:2px !important;border-style:solid !important;border-color:rgba(226, 226, 226, 1) !important;border-radius:3px !important;max-width:500px;height:100px}.module-form-355 textarea.form-control:hover{font-family:\'Nunito Sans\' !important;font-weight:400 !important;font-size:15px !important;color:rgba(0, 68, 149, 1) !important;border-color:rgba(0, 68, 149, 1) !important;box-shadow:0 5px 15px -5px rgba(0, 0, 0, 0.07)}.module-form-355 textarea.form-control:focus, .module-form-355 textarea.form-control:active{border-color:rgba(0, 68, 149, 1) !important}.module-form-355 textarea.form-control:focus{box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.1)}.module-form-355 select.form-control{font-family:\'Nunito Sans\' !important;font-weight:400 !important;font-size:15px !important;color:rgba(77, 77, 77, 1) !important;background:rgba(255, 255, 255, 1) !important;border-width:2px !important;border-style:solid !important;border-color:rgba(226, 226, 226, 1) !important;border-radius:3px !important;max-width:500px}.module-form-355 select.form-control:hover{font-family:\'Nunito Sans\' !important;font-weight:400 !important;font-size:15px !important;color:rgba(0, 68, 149, 1) !important;border-color:rgba(0, 68, 149, 1) !important;box-shadow:0 5px 15px -5px rgba(0, 0, 0, 0.07)}.module-form-355 select.form-control:focus, .module-form-355 select.form-control:active{border-color:rgba(0, 68, 149, 1) !important}.module-form-355 select.form-control:focus{box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.1)}.module-form-355
+.radio{width:100%}.module-form-355
+.checkbox{width:100%}.module-form-355 .input-group .form-control{font-family:\'Nunito Sans\' !important;font-weight:400 !important;font-size:15px !important;color:rgba(77, 77, 77, 1) !important;background:rgba(255, 255, 255, 1) !important;border-width:2px !important;border-style:solid !important;border-color:rgba(226, 226, 226, 1) !important;border-radius:3px !important}.module-form-355 .input-group .form-control:hover{font-family:\'Nunito Sans\' !important;font-weight:400 !important;font-size:15px !important;color:rgba(0, 68, 149, 1) !important;border-color:rgba(0, 68, 149, 1) !important;box-shadow:0 5px 15px -5px rgba(0, 0, 0, 0.07)}.module-form-355 .input-group .form-control:focus, .module-form-355 .input-group .form-control:active{border-color:rgba(0, 68, 149, 1) !important}.module-form-355 .input-group .form-control:focus{box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.1)}.module-form-355 .input-group .input-group-btn .btn, .module-form-355 .input-group .input-group-btn .btn:visited{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(255, 255, 255, 1);text-transform:none;letter-spacing:1px}.module-form-355 .input-group .input-group-btn .btn:hover{font-family:\'Nunito Sans\' !important;font-weight:800 !important;font-size:15px !important;color:rgba(255, 255, 255, 1) !important;background:rgba(0, 30, 67, 1) !important}.module-form-355 .input-group .input-group-btn .btn:active, .module-form-355 .input-group .input-group-btn .btn:hover:active, .module-form-355 .input-group .input-group-btn .btn:focus:active{color:rgba(255, 255, 255, 1) !important;background:rgba(0, 30, 67, 1) !important;box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.1)}.module-form-355 .input-group .input-group-btn .btn:focus{color:rgba(255, 255, 255, 1) !important;background:rgba(215, 70, 58, 1);box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.1)}.module-form-355 .input-group .input-group-btn
+.btn{background:rgba(0, 68, 149, 1);border-width:2px;padding:15px;padding-right:20px;padding-left:20px;border-radius:3px !important;min-width:36px;padding:12px;min-height:36px;margin-left:5px}.desktop .module-form-355 .input-group .input-group-btn .btn:hover{box-shadow:0 10px 40px rgba(0, 0, 0, 0.15)}.module-form-355 .input-group .input-group-btn .btn.btn.disabled::after{font-size:20px}.module-form-355.bootstrap-datetimepicker-widget{font-family:\'Nunito Sans\';font-weight:800;color:rgba(77, 77, 77, 1)}.module-form-355.bootstrap-datetimepicker-widget
+td.active{background:rgba(0, 68, 149, 1)}.module-form-355
+.buttons{margin-top:50px;margin-bottom:20px;font-family:\'Nunito Sans\';font-weight:600;font-size:15px}.module-form-355 .buttons .pull-right .btn, .module-form-355 .buttons .pull-right .btn:visited{font-family:\'Nunito Sans\';font-weight:600;font-size:15px;color:rgba(255, 255, 255, 1)}.module-form-355 .buttons .pull-right .btn:hover{font-family:\'Nunito Sans\' !important;font-weight:800 !important;font-size:15px !important;color:rgba(255, 255, 255, 1) !important;background:rgba(0, 30, 67, 1) !important}.module-form-355 .buttons .pull-right .btn:active, .module-form-355 .buttons .pull-right .btn:hover:active, .module-form-355 .buttons .pull-right .btn:focus:active{color:rgba(0, 68, 149, 1) !important;background:rgba(255, 255, 255, 1) !important;border-color:rgba(0, 68, 149, 1) !important}.module-form-355 .buttons .pull-right
+.btn{background:rgba(0, 68, 149, 1);border-width:3px;border-color:rgba(255, 255, 255, 0);box-shadow:none;border-radius:3px !important}.module-form-355 .buttons .pull-right .btn.btn.disabled::after{font-size:20px}.module-form-355 .buttons .pull-left .btn, .module-form-355 .buttons .pull-left .btn:visited{font-family:\'Nunito Sans\';font-weight:600;font-size:15px;color:rgba(77, 77, 77, 1)}.module-form-355 .buttons .pull-left .btn:hover{font-family:\'Nunito Sans\' !important;font-weight:600 !important;font-size:15px !important;color:rgba(0, 30, 67, 1) !important;background:rgba(213, 213, 213, 1) !important}.module-form-355 .buttons .pull-left .btn:active, .module-form-355 .buttons .pull-left .btn:hover:active, .module-form-355 .buttons .pull-left .btn:focus:active{color:rgba(0, 68, 149, 1) !important;background:rgba(255, 255, 255, 1) !important;border-color:rgba(0, 68, 149, 1) !important;box-shadow:none}.module-form-355 .buttons .pull-left
+.btn{background:rgba(242, 242, 242, 1);border-width:3px;border-style:none;box-shadow:none;border-radius:3px !important}.module-form-355 .buttons .pull-left .btn:hover, .module-form-355 .buttons .pull-left .btn:active:hover{border-color:rgba(0, 68, 149, 1)}.desktop .module-form-355 .buttons .pull-left .btn:hover{box-shadow:none}.module-form-355 .buttons .pull-left .btn:focus{box-shadow:none}.module-form-355 .buttons .pull-left .btn.btn.disabled::after{font-size:20px}.module-form-355 .buttons>div{flex:0 0 auto;width:auto;flex-basis:0}.module-form-355 .buttons > div
+.btn{width:auto}.module-form-355 .buttons .pull-left{margin-right:auto}.module-form-355 .buttons>div+div{padding-top:20px;padding-left:20px}.module-form-355 .buttons .pull-right:only-child{flex:0 0 auto;width:auto;margin:0
+0 0 auto}.module-form-355 .buttons .pull-right:only-child
+.btn{width:auto}.module-form-355 .buttons input+.btn{margin-top:5px}.module-form-355 .buttons input[type=checkbox]{margin-top:10px !important;margin-bottom:10px !important}@media (max-width: 414px){.module-form-355 .form-group .control-label{padding-bottom:2px;margin-bottom:0px}.module-form-355 input.form-control{height:32px}.module-form-355 .input-group .input-group-btn
+.btn{padding-right:20px;padding-left:20px}.module-form-355 .buttons>div{flex:1;width:100%;flex-basis:auto}.module-form-355 .buttons > div
+.btn{width:100%}.module-form-355 .buttons .pull-left{margin-right:0}.module-form-355 .buttons>div+div{padding-top:5px;padding-left:0px}.module-form-355 .buttons .pull-right:only-child{flex:1;margin:0
+auto 0 auto}.module-form-355 .buttons .pull-right:only-child
+.btn{width:100%}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        400 => '400',
+        800 => '800',
+        600 => '600',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'title' => '',
+    'agree' => '',
+    'sentText' => 'Sent',
+    'sentEmailTo' => 'estore@devicelect.com',
+    'sentEmailSubject' => '{{ $store }} - Enquiry from {{ $email }}',
+    'sentEmailLogo' => false,
+    'sentEmailTitle' => 'A new message has been received!',
+    'sentEmailField' => 'Field',
+    'sentEmailValue' => 'Value',
+    'sentEmailUsingModule' => 'Sent using module',
+    'sentEmailFrom' => 'Sent from',
+    'sentEmailIPAddress' => 'IP Address',
+    'status' => true,
+    'id' => 'form-6266b1a5130c8',
+    'module_id' => 355,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-form',
+      2 => 'module-form-355',
+    ),
+    'text_select' => ' --- Please Select --- ',
+    'text_loading' => 'Loading...',
+    'button_submit' => 'Submit',
+    'button_upload' => 'Upload File',
+    'datepicker' => 'en-gb',
+    'action' => 'https://device-electronics.com/index.php?route=journal3/form/send&amp;module_id=355',
+    'agree_data' => NULL,
+    'items' => 
+    array (
+      1 => 
+      array (
+        'name' => 'Name',
+        'label' => 'Name',
+        'placeholder' => 'Input your name',
+        'type' => 'name',
+        'required' => true,
+        'id' => '355-1',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-1',
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'Company',
+        'label' => 'Company',
+        'placeholder' => 'Input your company name',
+        'type' => 'text',
+        'required' => true,
+        'id' => '355-2',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-2',
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'name' => 'Phone No.',
+        'label' => 'Phone No.',
+        'placeholder' => 'Input your phone number',
+        'type' => 'tel',
+        'required' => true,
+        'id' => '355-3',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-3',
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      4 => 
+      array (
+        'name' => 'Email',
+        'label' => 'Email',
+        'placeholder' => 'Input your email',
+        'type' => 'email',
+        'required' => true,
+        'id' => '355-4',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-4',
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      5 => 
+      array (
+        'name' => 'Message',
+        'label' => 'Message',
+        'placeholder' => 'What\'s your message?',
+        'type' => 'textarea',
+        'required' => true,
+        'id' => '355-5',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-5',
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      6 => 
+      array (
+        'name' => 'Upload File 1',
+        'label' => 'Upload File 1',
+        'placeholder' => '',
+        'type' => 'file',
+        'required' => false,
+        'id' => '355-6',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-6',
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      7 => 
+      array (
+        'name' => 'Upload File 2',
+        'label' => 'Upload File 2',
+        'placeholder' => '',
+        'type' => 'file',
+        'required' => false,
+        'id' => '355-7',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-7',
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      8 => 
+      array (
+        'name' => 'Upload File 3',
+        'label' => 'Upload File 3',
+        'placeholder' => '',
+        'type' => 'file',
+        'required' => false,
+        'id' => '355-8',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-8',
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+);

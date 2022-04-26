@@ -1,0 +1,65 @@
+<?php $val = array (
+  'css' => '.module-header_notice-56 .hn-close::before{content:none !important}.module-header_notice-56 .hn-close.btn, .module-header_notice-56 .hn-close.btn:visited{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(181, 181, 181, 1);text-transform:none;letter-spacing:0}.module-header_notice-56 .hn-close.btn:hover{font-family:\'Nunito Sans\' !important;font-weight:600 !important;font-size:15px !important;color:rgba(0, 68, 149, 1) !important;background:none !important}.module-header_notice-56 .hn-close.btn:active, .module-header_notice-56 .hn-close.btn:hover:active, .module-header_notice-56 .hn-close.btn:focus:active{color:rgba(0, 30, 67, 1) !important;background:none !important;box-shadow:none}.module-header_notice-56 .hn-close.btn:focus{color:rgba(240, 101, 101, 1) !important;background:none;box-shadow:none}.module-header_notice-56 .hn-close.btn{background:none;padding:0px;box-shadow:none;border-radius:0px !important}.desktop .module-header_notice-56 .hn-close.btn:hover{box-shadow:none}.module-header_notice-56 .hn-close.btn.btn.disabled::after{font-size:20px}.module-header_notice-56 .hn-close{margin-left:5px}.module-header_notice-56 .module-body
+p{margin-bottom:0px}.module-header_notice-56 .module-body{min-height:35px;height:auto;flex-direction:row;background:rgba(242, 242, 242, 1)}.module-header_notice-56 .header-notice-close-button{position:relative;top:auto;right:auto;bottom:auto;left:auto;transform:none}.module-header_notice-56 .hn-content{font-family:\'Nunito Sans\';font-weight:600;font-size:15px;color:rgba(0, 68, 149, 1);line-height:1.4}.module-header_notice-56 .hn-content
+a{font-family:\'Nunito Sans\';font-weight:600;font-size:15px;color:rgba(0, 68, 149, 1);text-decoration:underline}.module-header_notice-56 .hn-content a:hover{font-family:\'Nunito Sans\';font-weight:600;font-size:15px;color:rgba(200, 222, 251, 1)}.module-header_notice-56 .hn-body::before{content:none !important;float:none}.module-header_notice-56 .hn-body{display:flex}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        400 => '400',
+        600 => '600',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'cookie' => '14ce135a',
+    'closeButton' => false,
+    'closeLink' => 
+    array (
+      'type' => '',
+      'id' => '',
+      'href' => '',
+      'name' => '',
+      'total' => NULL,
+      'attrs' => 
+      array (
+      ),
+      'classes' => 
+      array (
+      ),
+    ),
+    'closeText' => '',
+    'content' => '<div style=""><font face="Segoe UI, system-ui, Apple Color Emoji, Segoe UI Emoji, sans-serif">Prices shown are inclusive of <b>7%</b> GST Tax</font><br></div>',
+    'status' => true,
+    'id' => 'header_notice-626747b3bbd32',
+    'module_id' => 56,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-header_notice',
+      2 => 'module-header_notice-56',
+    ),
+    'options' => 
+    array (
+      'cookie' => '14ce135a',
+      'ease' => 'easeInOutQuart',
+      'duration' => '',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

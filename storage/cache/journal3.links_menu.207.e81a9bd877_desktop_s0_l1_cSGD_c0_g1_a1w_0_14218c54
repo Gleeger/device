@@ -1,0 +1,195 @@
+<?php $val = array (
+  'css' => 'div.links-menu-207 .title.module-title{font-size:15px;font-weight:700;border-width:0px;padding-bottom:20px;white-space:normal;overflow:visible;text-overflow:initial;font-family:\'Nunito Sans\';font-weight:800;font-size:15px;color:rgba(181, 181, 181, 1);text-align:left}div.links-menu-207 .title.module-title::after{display:none;margin-left:0;margin-right:auto;transform:none}div.links-menu-207 .title.module-title.page-title>span::after{display:none}div.links-menu-207 .module-body{display:block;justify-content:flex-start;;-webkit-overflow-scrolling:touch;;column-count:initial;column-gap:30px;column-rule-width:1px;column-rule-style:solid}div.links-menu-207 .menu-item{border-width:1px 0 0 0;flex-grow:0;justify-content:flex-start;width:auto}div.links-menu-207 .menu-item a .links-text{white-space:normal;font-family:\'Nunito Sans\';font-weight:400;color:rgba(255, 255, 255, 1)}div.links-menu-207 .menu-item
+a{justify-content:flex-start;width:auto;padding-bottom:4px}div.links-menu-207 .menu-item a:hover .links-text{font-family:\'Nunito Sans\';font-weight:800;color:rgba(255, 255, 255, 1);text-decoration:none}div.links-menu-207 .count-badge{display:none}.phone footer  div.links-menu-207 .module-title::before{display:none}.phone footer  div.links-menu-207 .module-title+.module-body>li{display:flex}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'title' => 'Information',
+    'status' => true,
+    'id' => 'links-menu-62669140245c6',
+    'module_id' => 207,
+    'classes' => 
+    array (
+      0 => 'links-menu',
+      1 => 'links-menu-207',
+    ),
+    'items' => 
+    array (
+      1 => 
+      array (
+        'title' => 'Panduit',
+        'link' => 
+        array (
+          'type' => 'information',
+          'id' => '7',
+          'href' => 'https://device-electronics.com/panduit',
+          'name' => 'Panduit',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'label' => '',
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'links-menu-item',
+          2 => 'links-menu-item-1',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'title' => 'Teledyne Relays',
+        'link' => 
+        array (
+          'type' => 'information',
+          'id' => '8',
+          'href' => 'https://device-electronics.com/teledyne',
+          'name' => 'Teledyne',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'label' => '',
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'links-menu-item',
+          2 => 'links-menu-item-2',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'title' => 'Contact Us',
+        'link' => 
+        array (
+          'type' => 'page',
+          'id' => '',
+          'href' => 'https://device-electronics.com/contact',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'label' => '',
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'links-menu-item',
+          2 => 'links-menu-item-3',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      4 => 
+      array (
+        'title' => 'Privacy & Policy',
+        'link' => 
+        array (
+          'type' => 'information',
+          'id' => '3',
+          'href' => 'https://device-electronics.com/privacy',
+          'name' => 'Privacy Policy',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'label' => '',
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'links-menu-item',
+          2 => 'links-menu-item-4',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      5 => 
+      array (
+        'title' => 'Terms & Conditions',
+        'link' => 
+        array (
+          'type' => 'information',
+          'id' => '5',
+          'href' => 'https://device-electronics.com/terms',
+          'name' => 'Terms &amp; Conditions',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'label' => '',
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'links-menu-item',
+          2 => 'links-menu-item-5',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+);

@@ -1,0 +1,235 @@
+<?php $val = array (
+  'css' => '.module-master_slider-351 .ms-view{overflow:hidden}.module-master_slider-351 .static-text-1{top:0;left:0;right:auto;bottom:auto;transform:none}.module-master_slider-351 .static-text-1
+span{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-351 .static-text-2{top:auto;left:0;right:auto;bottom:0;transform:translate3d(0, 0, 0)}.module-master_slider-351 .static-text-2
+span{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-351 .ms-nav-next{display:flex;left:auto;right:0;top:50%;bottom:auto;transform:translateY(-100%)}.module-master_slider-351 .ms-nav-prev{display:flex;left:auto;right:0;top:50%;bottom:auto;transform:translateY(0)}.module-master_slider-351 .ms-nav-next::before, .module-master_slider-351 .ms-nav-prev::before{content:\'\\e9b1\' !important;font-family:icomoon !important}.desktop .module-master_slider-351 .ms-nav-next:hover::before, .desktop .module-master_slider-351 .ms-nav-prev:hover::before{color:rgba(255, 255, 255, 1)}.module-master_slider-351 .ms-nav-next, .module-master_slider-351 .ms-nav-prev{width:40px;height:40px}.module-master_slider-351 .ms-nav-next:hover, .module-master_slider-351 .ms-nav-prev:hover{background:rgba(87, 154, 193, 1)}.module-master_slider-351 .ms-bullets{display:block;top:50%;bottom:auto;left:0;right:auto;transform:translateY(-50%);;margin-left:30px;margin-right:30px}.module-master_slider-351 .ms-bullets .ms-bullets-count{flex-direction:column}.module-master_slider-351 .ms-bullets .ms-bullet{margin:calc(10px / 2) !important;background:rgba(255, 255, 255, 1);border-radius:10px}.module-master_slider-351 .ms-bullet{width:5px;height:15px}.desktop .module-master_slider-351 .ms-bullets .ms-bullet:hover, .module-master_slider-351 .ms-bullets .ms-bullet-selected{background:rgba(240, 101, 101, 1)}.module-master_slider-351 .ms-thumb-list{display:block;padding:10px
+0;top:auto !important;bottom:0 !important;order:2}.module-master_slider-351 .ms-thumb-list .ms-thumb-frame{margin-right:10px !important;opacity: .75}.module-master_slider-351 .ms-thumb-frame{border-width:0px}.module-master_slider-351 .ms-timerbar{display:block;top:0 !important;bottom:auto !important}.module-master_slider-351 .master-slider .ms-time-bar{background-color:rgba(240, 101, 101, 1) !important;height:1px !important}@media (max-width: 1024px){.module-master_slider-351 .ms-nav-next{display:none}.module-master_slider-351 .ms-nav-prev{display:none}.module-master_slider-351 .ms-bullets{margin-left:15px;margin-right:15px;margin-top:15px;margin-bottom:15px}}@media (max-width: 760px){.module-master_slider-351 .ms-bullets{top:auto;bottom:0;left:0;right:auto;transform:none}.module-master_slider-351 .ms-bullets .ms-bullets-count{flex-direction:row}.module-master_slider-351 .ms-bullet{width:15px;height:3px}}.module-master_slider-351 .module-item-1 .module-subitem-2.ms-layer-hotspot .ms-point-center{width:20px;height:20px}.module-master_slider-351 .module-item-1 .module-subitem-2{display:block;visibility:visible !important}.module-master_slider-351 .module-item-1 .module-subitem-2.ms-layer-button{transform:scale(calc(100 / 100));transform-origin:center}.module-master_slider-351 .module-item-1 .module-subitem-2.ms-caption{width:60%;font-family:\'Nunito Sans\';font-weight:400;font-size:23px;color:rgba(255, 255, 255, 1)}.module-master_slider-351 .module-item-1 .module-subitem-2.ms-layer-text::before{color:rgba(255, 255, 255, 1)}.module-master_slider-351 .module-item-1 .module-subitem-2.ms-layer-video{width:400px;height:225px}@media (max-width: 1280px){.module-master_slider-351 .module-item-1 .module-subitem-2.ms-layer-text{margin-left:3% !important;margin-right:3% !important}}@media (max-width: 414px){.module-master_slider-351 .module-item-1 .module-subitem-2{display:block;visibility:visible !important}.module-master_slider-351 .module-item-1 .module-subitem-2.ms-caption{font-size:11px;color:rgba(255, 255, 255, 1);text-align:left;margin:20px}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'shuffle' => false,
+    'imageDimensions' => 
+    array (
+      'width' => 1920,
+      'height' => 600,
+      'resize' => 'fill',
+    ),
+    'sliderDimensions' => 
+    array (
+      'width' => 1280,
+      'height' => 400,
+      'resize' => 'fill',
+    ),
+    'parallaxMode' => true,
+    'parallax' => '35',
+    'layout' => 'autofill',
+    'layoutTablet' => '',
+    'layoutPhone' => 'autofill',
+    'bottomOffset' => '',
+    'bottomOffsetTablet' => '',
+    'bottomOffsetPhone' => '',
+    'staticTextType' => 'text',
+    'staticText' => '',
+    'staticTextLink' => 
+    array (
+      'type' => '',
+      'id' => '',
+      'href' => '',
+      'name' => '',
+      'total' => NULL,
+      'attrs' => 
+      array (
+      ),
+      'classes' => 
+      array (
+      ),
+    ),
+    'static2TextType' => 'text',
+    'static2Text' => '',
+    'static2TextLink' => 
+    array (
+      'type' => '',
+      'id' => '',
+      'href' => '',
+      'name' => '',
+      'total' => NULL,
+      'attrs' => 
+      array (
+      ),
+      'classes' => 
+      array (
+      ),
+    ),
+    'delay' => '2500',
+    'thumbnails' => false,
+    'thumbnailsDimensions' => 
+    array (
+      'width' => 50,
+      'height' => 50,
+      'resize' => 'fill',
+    ),
+    'lazyLoad' => false,
+    'status' => true,
+    'id' => 'master_slider-6266e1358f33d',
+    'module_id' => 351,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-master_slider',
+      2 => 'module-master_slider-351',
+      'fullscreen-slider' => false,
+    ),
+    'width' => 1920,
+    'height' => 600,
+    'options' => 
+    array (
+      'width' => 1280,
+      'height' => 400,
+      'layout' => 'autofill',
+      'smoothHeight' => false,
+      'centerControls' => false,
+      'parallaxMode' => 'swipe',
+      'instantStartLayers' => true,
+      'loop' => true,
+      'dir' => 'h',
+      'autoHeight' => false,
+      'rtl' => false,
+      'startOnAppear' => false,
+      'autoplay' => true,
+      'overPause' => true,
+      'shuffle' => false,
+      'view' => 'mask',
+      'speed' => '15',
+      'swipe' => true,
+      'mouse' => true,
+      'controls' => 
+      array (
+        'arrows' => 
+        array (
+          'autohide' => false,
+        ),
+        'bullets' => 
+        array (
+          'autohide' => false,
+        ),
+        'timebar' => 
+        array (
+          'autohide' => false,
+          'inset' => true,
+          'align' => 'top',
+        ),
+      ),
+    ),
+    'first_image' => 'https://device-electronics.com/image/cache/catalog/Banner/Teledyne%20Page/Banner-Teledyne-01-1920x600.jpg',
+    'first_alt' => '',
+    'items' => 
+    array (
+      1 => 
+      array (
+        'type' => 'image',
+        'alt' => '',
+        'videoType' => 'html5',
+        'link' => 
+        array (
+          'type' => 'page',
+          'id' => '',
+          'href' => 'https://device-electronics.com/index.php?route=product/catalog',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'id' => '351-1',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-1',
+          2 => 'ms-slide',
+        ),
+        'delay' => 2.5,
+        'image' => 'https://device-electronics.com/image/cache/catalog/Banner/Teledyne%20Page/Banner-Teledyne-01-1920x600.jpg',
+        'image2x' => 'https://device-electronics.com/image/cache/catalog/Banner/Teledyne%20Page/Banner-Teledyne-01-3840x1200.jpg',
+        'thumb' => false,
+        'items' => 
+        array (
+          2 => 
+          array (
+            'type' => 'text',
+            'text' => 'The world’s innovation leader in manufacturing ultraminiature<br>hermetically sealed switching products',
+            'alt' => '',
+            'videoType' => 'html5',
+            'link' => 
+            array (
+              'type' => '',
+              'id' => '',
+              'href' => '',
+              'name' => '',
+              'total' => NULL,
+              'attrs' => 
+              array (
+              ),
+              'classes' => 
+              array (
+              ),
+            ),
+            'imageDimensions' => 
+            array (
+              'width' => NULL,
+              'height' => NULL,
+              'resize' => 'fill',
+            ),
+            'id' => '351-1-2',
+            'classes' => 
+            array (
+              0 => 'module-subitem',
+              1 => 'module-subitem-2',
+              2 => 'ms-layer',
+              3 => 'ms-layer-text',
+              'btn' => false,
+              'no-show-effect' => false,
+              'ms-caption' => true,
+            ),
+            'data' => 
+            array (
+              0 => 'data-resize="true"',
+              1 => 'data-origin="ml"',
+              2 => 'data-parallax="0"',
+              3 => 'data-type="text"',
+              4 => 'data-position="normal"',
+              5 => 'data-effect="bottom(400)"',
+              6 => 'data-delay="100"',
+              7 => 'data-duration="700"',
+              8 => 'data-ease="easeInOutQuad"',
+              9 => 'data-hide-effect="fade"',
+              10 => 'data-hide-delay="0"',
+              11 => 'data-hide-duration="0"',
+            ),
+          ),
+        ),
+      ),
+    ),
+    'first_image2x' => 'https://device-electronics.com/image/cache/catalog/Banner/Teledyne%20Page/Banner-Teledyne-01-3840x1200.jpg',
+  ),
+);

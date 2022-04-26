@@ -25,7 +25,7 @@ ul{justify-content:flex-start}.icons-menu-61 .module-title{text-align:left}.icon
       'resize' => 'fill',
     ),
     'status' => true,
-    'id' => 'icons-menu-62667b08ec283',
+    'id' => 'icons-menu-62667eda96b01',
     'module_id' => 61,
     'classes' => 
     array (

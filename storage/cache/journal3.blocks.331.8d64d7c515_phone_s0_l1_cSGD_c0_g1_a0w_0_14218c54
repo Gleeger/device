@@ -1,0 +1,185 @@
+<?php $val = array (
+  'css' => '.module-blocks-331.blocks-grid .module-item.swiper-slide{margin-right:0px;width:calc((100% - 0 * 0px) / 1 - 0.01px)}.module-blocks-331.blocks-grid .module-item:not(.swiper-slide){padding:0px;width:calc(100% / 1 - 0.01px)}.one-column #content .module-blocks-331.blocks-grid .module-item.swiper-slide{margin-right:0px;width:calc((100% - 0 * 0px) / 1 - 0.01px)}.one-column #content .module-blocks-331.blocks-grid .module-item:not(.swiper-slide){padding:0px;width:calc(100% / 1 - 0.01px)}.two-column #content .module-blocks-331.blocks-grid .module-item.swiper-slide{margin-right:0px;width:calc((100% - 0 * 0px) / 1 - 0.01px)}.two-column #content .module-blocks-331.blocks-grid .module-item:not(.swiper-slide){padding:0px;width:calc(100% / 1 - 0.01px)}.side-column .module-blocks-331.blocks-grid .module-item.swiper-slide{margin-right:0px;width:calc((100% - 0 * 0px) / 1 - 0.01px)}.side-column .module-blocks-331.blocks-grid .module-item:not(.swiper-slide){padding:0px;width:calc(100% / 1 - 0.01px)}.module-blocks-331 .block-body{padding-left:18px;display:flex;flex-direction:column}.module-blocks-331 .block-title{order:-2}.module-blocks-331 .block-header{display:flex;float:none;order:-1;justify-content:flex-start;align-items:flex-start}.module-blocks-331 .block-header
+img{display:flex}.module-blocks-331 .block-wrapper{display:flex;text-align:left;justify-content:center}.module-blocks-331 .block-header
+i{float:none;display:flex}.module-blocks-331 .module-item-1 .block-body .block-content{font-family:\'Nunito Sans\';font-weight:400;font-size:13px;color:rgba(255, 255, 255, 1);text-transform:none}.module-blocks-331 .module-item-1 .block-header{display:flex;float:none;order:-1;justify-content:flex-start;align-items:flex-start}.module-blocks-331 .module-item-1 .block-header
+img{display:flex}.module-blocks-331 .module-item-1 .block-wrapper{display:flex;justify-content:center}.module-blocks-331 .module-item-1 .block-header
+i{float:none;display:flex}.module-blocks-331 .module-item-1 .block-body{display:flex;flex-direction:column}.module-blocks-331 .module-item-1 .block-content{text-align:left;column-count:initial;column-gap:20px;column-rule-width:1px;column-rule-style:solid;font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(77, 77, 77, 1);line-height:1.6;-webkit-font-smoothing:antialiased}.module-blocks-331 .module-item-1 .expand-content{max-height:100%;overflow:visible}.module-blocks-331 .module-item-1 .block-footer
+.btn{width:auto;transform:scale(calc(100 / 100));transform-origin:center}.module-blocks-331 .module-item-1 .block-footer{text-align:center}.module-blocks-331 .module-item-1 .block-content h1, .module-blocks-331 .module-item-1 .block-content h2, .module-blocks-331 .module-item-1 .block-content h3, .module-blocks-331 .module-item-1 .block-content h4, .module-blocks-331 .module-item-1 .block-content h5, .module-blocks-331 .module-item-1 .block-content
+h6{font-family:\'Nunito Sans\';font-weight:400;color:rgba(77, 77, 77, 1)}.module-blocks-331 .module-item-1 .block-content
+a{color:rgba(87, 154, 193, 1);text-decoration:underline;display:inline-block}.module-blocks-331 .module-item-1 .block-content a:hover{color:rgba(240, 101, 101, 1);text-decoration:none}.module-blocks-331 .module-item-1 .block-content
+p{margin-bottom:15px}.module-blocks-331 .module-item-1 .block-content
+h1{font-family:\'Nunito Sans\';font-weight:800;font-size:62px;color:rgba(0, 68, 149, 1);margin-bottom:20px}.module-blocks-331 .module-item-1 .block-content
+h2{font-family:\'Nunito Sans\';font-weight:700;font-size:37px;color:rgba(0, 68, 149, 1);margin-bottom:15px}.module-blocks-331 .module-item-1 .block-content
+h3{font-family:\'Nunito Sans\';font-weight:600;font-size:29px;color:rgba(77, 77, 77, 1);margin-bottom:15px}.module-blocks-331 .module-item-1 .block-content
+h4{font-family:\'Nunito Sans\';font-weight:400;font-size:23px;color:rgba(77, 77, 77, 1);text-transform:uppercase;margin-bottom:15px}.module-blocks-331 .module-item-1 .block-content
+h5{font-family:\'Nunito Sans\';font-weight:400;font-size:18px;color:rgba(77, 77, 77, 1);margin-bottom:20px}.module-blocks-331 .module-item-1 .block-content
+h6{font-family:\'Nunito Sans\';font-weight:700;font-size:15px;color:rgba(77, 77, 77, 1);text-transform:uppercase;padding:10px;padding-top:8px;padding-bottom:7px;margin-top:5px;margin-bottom:15px;display:inline-block}.module-blocks-331 .module-item-1 .block-content
+blockquote{font-size:17px;color:rgba(139, 145, 152, 1);font-weight:400;font-style:italic;padding-left:20px;margin-top:20px;margin-bottom:20px;border-width:0;border-left-width:5px;border-style:solid;border-color:rgba(240, 101, 101, 1);float:none;display:flex;flex-direction:column;max-width:500px}.module-blocks-331 .module-item-1 .block-content blockquote::before{margin-left:initial;margin-right:auto;float:none;content:\'\\e9af\' !important;font-family:icomoon !important;font-size:45px;color:rgba(240, 101, 101, 1);margin-right:10px;margin-bottom:10px}.module-blocks-331 .module-item-1 .block-content
+hr{margin-top:20px;margin-bottom:20px;border-width:0;border-top-width:1px;border-style:solid;border-color:rgba(226, 226, 226, 1);overflow:hidden}.module-blocks-331 .module-item-1 .block-content .drop-cap{font-family:\'Nunito Sans\' !important;font-weight:700 !important;font-size:70px !important;font-family:\'Nunito Sans\';font-weight:700;margin-right:8px}.module-blocks-331 .module-item-1 .block-content .amp::before{content:\'\\e901\' !important;font-family:icomoon !important;font-size:25px;top:5px}.module-blocks-331 .module-item-1 .block-content .video-responsive{max-width:550px;margin:0px;margin-bottom:20px}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        400 => '400',
+        800 => '800',
+        700 => '700',
+        600 => '600',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'display' => 'grid',
+    'displayTablet' => '',
+    'displayPhone' => '',
+    'carousel' => false,
+    'itemsPerRow' => 
+    array (
+      'c0' => 
+      array (
+        0 => 
+        array (
+          'items' => 1,
+          'spacing' => 0,
+        ),
+      ),
+      'c1' => 
+      array (
+        0 => 
+        array (
+          'items' => 1,
+          'spacing' => 0,
+        ),
+      ),
+      'c2' => 
+      array (
+        0 => 
+        array (
+          'items' => 1,
+          'spacing' => 0,
+        ),
+      ),
+      'sc' => 
+      array (
+        0 => 
+        array (
+          'items' => 1,
+          'spacing' => 0,
+        ),
+      ),
+    ),
+    'default' => '',
+    'title' => '',
+    'imageDimensions' => 
+    array (
+      'width' => NULL,
+      'height' => NULL,
+      'resize' => 'fill',
+    ),
+    'lazyLoad' => false,
+    'status' => true,
+    'id' => 'blocks-62669ea4ca7e3',
+    'module_id' => 331,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-blocks',
+      2 => 'module-blocks-331',
+      3 => 'blocks-grid',
+      'carousel-mode' => false,
+    ),
+    'carouselOptions' => 
+    array (
+      'speed' => 0,
+      'autoplay' => false,
+      'pauseOnHover' => false,
+      'loop' => false,
+    ),
+    'default_index' => 0,
+    'items' => 
+    array (
+      1 => 
+      array (
+        'link' => 
+        array (
+          'type' => '',
+          'id' => '',
+          'href' => '',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'header' => 'none',
+        'text' => '',
+        'alt' => '',
+        'contentType' => 'html',
+        'shortDescriptionLimit' => '150',
+        'dynamic' => 'journal3/blocks_example',
+        'expandButton' => false,
+        'footer' => 'none',
+        'footerText' => '',
+        'footerButton' => '',
+        'footerButtonLink' => 
+        array (
+          'type' => '',
+          'id' => '',
+          'href' => '',
+          'name' => '',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'id' => '331-1',
+        'classes' => 
+        array (
+          0 => 'module-item',
+          1 => 'module-item-1',
+          'tab-pane' => false,
+          'active' => false,
+          'panel' => false,
+          'panel-active' => false,
+          'swiper-slide' => false,
+        ),
+        'tab_classes' => 
+        array (
+          0 => 'tab-1',
+          'active' => false,
+        ),
+        'panel_classes' => 
+        array (
+          0 => 'panel-collapse',
+          1 => 'collapse',
+          'in' => false,
+        ),
+        'image' => 'https://device-electronics.com/image/cache/placeholder-258x194.png',
+        'image2x' => 'https://device-electronics.com/image/cache/placeholder-258x194.png',
+        'title' => '',
+        'content' => '<p>Authorised distributor of</p><p>&nbsp;<span style="font-family: &quot;Chinese Quote&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;">&nbsp;</span><img src="https://device-electronics.com/image/catalog/Logo-Panduit-03.png" style="width: 113.734px; height: 30.4778px;"><span style="font-family: &quot;Chinese Quote&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;">&amp;&nbsp;&nbsp;</span><img src="https://device-electronics.com/image/catalog/Logo-Teledyne-05.png" style="width: 131.578px; height: 26.6596px;"></p>',
+        'items' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+);

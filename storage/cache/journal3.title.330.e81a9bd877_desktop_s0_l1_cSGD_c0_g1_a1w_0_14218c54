@@ -1,0 +1,44 @@
+<?php $val = array (
+  'css' => '.module-title-330 .title-wrapper
+h3{font-family:\'Nunito Sans\';font-weight:800;font-size:37px;color:rgba(0, 68, 149, 1)}.module-title-330 .title-wrapper
+.subtitle{font-family:\'Nunito Sans\';font-weight:400;font-size:14px;color:rgba(117, 117, 117, 1);text-align:justify}.module-title-330 .title-wrapper::before{opacity:.05;display:block}.module-title-330 .title-wrapper{text-align:left}.module-title-330 .title-divider{margin-left:0;margin-right:auto}@media (max-width: 414px){.module-title-330{padding-right:20px}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'type' => 'custom',
+    'title' => '',
+    'subtitle' => 'Teledyne Relays is the world’s innovation leader in manufacturing ultraminiature hermetically sealed switching products, with more than 50 years heritage in military programs. The comprehensive product line meets wide-ranging requirements for the defence and aerospace markets, covering frequencies from 10MHz to 40GHz, and signal integrity up to 40Gbps. Teledyne Relays also offer high-performance solutions for industrial, professional, commercial, medical and custom switching applications.',
+    'status' => true,
+    'id' => 'title-6266e1359567a',
+    'module_id' => 330,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-title',
+      2 => 'module-title-330',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

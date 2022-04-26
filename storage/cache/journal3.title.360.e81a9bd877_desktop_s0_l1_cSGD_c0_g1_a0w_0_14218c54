@@ -1,0 +1,47 @@
+<?php $val = array (
+  'css' => '.module-title-360 .title-wrapper
+h3{font-family:\'Nunito Sans\';font-weight:800;font-size:37px;color:rgba(0, 68, 149, 1)}.module-title-360 .title-wrapper
+.subtitle{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(117,117,117,1);text-align:justify}.module-title-360{margin-right:50px}.module-title-360 .title-wrapper::before{opacity:.05;display:block}.module-title-360 .title-wrapper{text-align:left}.module-title-360 .title-divider{margin-left:0;margin-right:auto}@media (max-width: 414px){.module-title-360{margin-right:0px}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'type' => 'custom',
+    'title' => '',
+    'subtitle' => 'Since 1955, Panduit’s culture of curiosity and passion for problem solving have enabled more meaningful connections between companies’ business goals and their marketplace success. Panduit creates leading-edge physical, electrical, and network infrastructure solutions for enterprise-wide environments, from the data center to the telecom room, from the desktop to the plant floor.
+</br>
+</br>
+Headquartered in Tinley Park, IL, USA and operating in 112 global locations, Panduit’s proven reputation for quality and technology leadership, coupled with a robust partner ecosystem, help support, sustain, and empower business growth in a connected world.',
+    'status' => true,
+    'id' => 'title-626690a6d0950',
+    'module_id' => 360,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-title',
+      2 => 'module-title-360',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

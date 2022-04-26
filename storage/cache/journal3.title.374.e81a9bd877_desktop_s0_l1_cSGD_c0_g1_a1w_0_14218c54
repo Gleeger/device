@@ -1,0 +1,57 @@
+<?php $val = array (
+  'css' => '.module-title-374 .title-wrapper
+h3{font-family:\'Nunito Sans\';font-weight:800;color:rgba(117, 117, 117, 1)}.module-title-374 .title-wrapper
+.subtitle{font-family:\'Nunito Sans\';font-weight:400;font-size:15px;color:rgba(77,77,77,1);text-align:justify}.module-title-374{margin-top:50px;margin-right:90px}.module-title-374 .title-wrapper::before{opacity:.05;display:block}.module-title-374 .title-wrapper{text-align:left}.module-title-374 .title-divider{margin-left:0;margin-right:auto}@media (max-width: 414px){.module-title-374{margin-top:0px;margin-right:0px;margin-bottom:20px}}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        800 => '800',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'type' => 'custom',
+    'title' => '',
+    'subtitle' => '<strong>4 steps</strong> to help you get your free customised proposal:
+</br>
+</br>
+<strong>Step 1</strong> - Fill in your contact details.
+</br>
+<strong>Step 2</strong> - Put in a short description of what you need.
+</br>
+<strong>Step 3</strong> - Upload any drawings you may have.
+</br>
+<strong>Step 4</strong> - Submit
+</br>
+</br>
+After filling out the 4 steps, our talented and professional team will be guiding you through the
+process. No request is too big or small for our team!',
+    'status' => true,
+    'id' => 'title-6266ec2ea2b1a',
+    'module_id' => 374,
+    'classes' => 
+    array (
+      0 => 'module',
+      1 => 'module-title',
+      2 => 'module-title-374',
+    ),
+    'items' => 
+    array (
+    ),
+  ),
+);

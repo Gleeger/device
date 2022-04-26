@@ -1,0 +1,460 @@
+<?php $val = array (
+  'css' => '.accordion-menu-19
+.title{font-family:\'Nunito Sans\';font-weight:700;font-size:23px;color:rgba(0, 68, 149, 1);text-transform:none;line-height:1.1;padding-bottom:10px;white-space:normal;overflow:visible;text-overflow:initial}.accordion-menu-19 .title::after{display:none}.accordion-menu-19 .title.page-title>span::after{display:none}.accordion-menu-19>.j-menu>li>a::before{content:\'\\e93f\' !important;font-family:icomoon !important;color:rgba(181, 181, 181, 1)}.accordion-menu-19.accordion-menu .j-menu .dropdown>a>.count-badge{margin-right:5px}.accordion-menu-19.accordion-menu .j-menu .dropdown>a>.count-badge+.open-menu+.menu-label{margin-left:0}.accordion-menu-19.accordion-menu .j-menu .dropdown>a::after{display:none}.accordion-menu-19.accordion-menu .j-menu>li>a{font-family:\'Nunito Sans\';font-weight:700;font-size:15px;color:rgba(117, 117, 117, 1);padding:7px;padding-right:0px;padding-left:0px}.desktop .accordion-menu-19.accordion-menu .j-menu > li:hover > a, .accordion-menu-19.accordion-menu .j-menu>li.active>a{font-size:15px;color:rgba(0, 68, 149, 1)}.accordion-menu-19.accordion-menu .j-menu>li.open>a{font-size:15px;color:rgba(0, 68, 149, 1);font-weight:700}.accordion-menu-19.accordion-menu .j-menu .links-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.accordion-menu-19.accordion-menu .j-menu>li>a>span>s{font-family:\'Nunito Sans\';font-weight:400}.accordion-menu-19.accordion-menu .j-menu>li>a:not([href]){font-family:\'Nunito Sans\';font-weight:400}.accordion-menu-19.accordion-menu .j-menu>li>a::before{color:rgba(139, 145, 152, 1);margin-right:7px;font-size:12px}.accordion-menu-19.accordion-menu .j-menu li .count-badge{font-size:10px;color:rgba(255, 255, 255, 1);font-weight:400;background:rgba(240, 101, 101, 1);border-radius:50px}.accordion-menu-19.accordion-menu .j-menu li .count-zero{display:none !important}.accordion-menu-19.accordion-menu .j-menu a .count-badge{display:none;position:relative}.accordion-menu-19 .open-menu i::before{content:\'\\eba2\' !important;font-family:icomoon !important;font-size:16px;color:rgba(161, 163, 166, 1);left:5px}.accordion-menu-19 .open-menu[aria-expanded=\'true\'] i::before{content:\'\\eb87\' !important;font-family:icomoon !important;font-size:16px;color:rgba(240, 101, 101, 1);left:5px}.accordion-menu-19.accordion-menu .j-menu .j-menu .dropdown>a>.count-badge{margin-right:5px}.accordion-menu-19.accordion-menu .j-menu .j-menu .dropdown>a>.count-badge+.open-menu+.menu-label{margin-left:0}.accordion-menu-19.accordion-menu .j-menu .j-menu .dropdown>a::after{display:none}.accordion-menu-19.accordion-menu .j-menu .j-menu>li>a{font-size:13px;color:rgba(105, 105, 115, 1);font-weight:400;text-transform:none;padding:5px}.desktop .accordion-menu-19.accordion-menu .j-menu .j-menu > li:hover > a, .accordion-menu-19.accordion-menu .j-menu .j-menu>li.active>a{color:rgba(51, 51, 51, 1)}.accordion-menu-19.accordion-menu .j-menu .j-menu>li.open>a{font-weight:700}.accordion-menu-19.accordion-menu .j-menu .j-menu .links-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.accordion-menu-19.accordion-menu .j-menu .j-menu li .count-badge{font-size:10px;color:rgba(255, 255, 255, 1);font-weight:400;background:rgba(240, 101, 101, 1);border-radius:50px}.accordion-menu-19.accordion-menu .j-menu .j-menu li .count-zero{display:none !important}.accordion-menu-19.accordion-menu .j-menu .j-menu a .count-badge{display:none;position:relative}.accordion-menu-19 .j-menu > li > div .j-menu>li>a{padding-left:20px !important}.accordion-menu-19 .j-menu > li > div .j-menu>li>div>.j-menu>li>a{padding-left:30px !important}.accordion-menu-19 .j-menu > li > div .j-menu>li>div>.j-menu>li>div>.j-menu>li>a{padding-left:40px !important}.accordion-menu-19 .j-menu > li > div .j-menu>li>div>.j-menu>li>div>.j-menu>li>div>.j-menu>li>a{padding-left:50px !important}.accordion-menu-19>.j-menu{border-radius:px}.accordion-menu-19 .j-menu .accordion-menu-item-2>a{color:rgba(240, 101, 101, 1) !important}',
+  'fonts' => 
+  array (
+    'fonts' => 
+    array (
+      'Nunito Sans' => 
+      array (
+        700 => '700',
+        400 => '400',
+      ),
+    ),
+    'subsets' => 
+    array (
+      'latin-ext' => 'latin-ext',
+    ),
+  ),
+  'settings' => 
+  array (
+    'schedule' => 
+    array (
+      'from' => '',
+      'to' => '',
+      'between' => true,
+    ),
+    'title' => 'Categories',
+    'status' => true,
+    'id' => 'accordion-menu-626755ca7d5dd',
+    'module_id' => 19,
+    'classes' => 
+    array (
+      0 => 'accordion-menu',
+      1 => 'accordion-menu-19',
+    ),
+    'items' => 
+    array (
+      1 => 
+      array (
+        'title' => 'All Categories',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '75',
+          'href' => 'https://device-electronics.com/category',
+          'name' => 'All Categories',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-1',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'title' => 'Clearance Sale',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '84',
+          'href' => 'https://device-electronics.com/clearance-sale',
+          'name' => 'Clearance Sale',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-2',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'title' => 'Cabinets and Racks',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '83',
+          'href' => 'https://device-electronics.com/cabinets-and-racks',
+          'name' => 'Cabinets and Racks',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-3',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      4 => 
+      array (
+        'title' => 'Cable Managers',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '60',
+          'href' => 'https://device-electronics.com/cable-managers',
+          'name' => 'Cable Managers',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-4',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      5 => 
+      array (
+        'title' => 'Copper Accessories',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '59',
+          'href' => 'https://device-electronics.com/copper-accessories',
+          'name' => 'Copper Accessories',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-5',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      6 => 
+      array (
+        'title' => 'Copper Cables',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '65',
+          'href' => 'https://device-electronics.com/copper-cables',
+          'name' => 'Copper Cables',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-6',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      7 => 
+      array (
+        'title' => 'Copper Panels',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '78',
+          'href' => 'https://device-electronics.com/copper-panels',
+          'name' => 'Copper Panels',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-7',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      8 => 
+      array (
+        'title' => 'Copper Patch Cords',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '66',
+          'href' => 'https://device-electronics.com/copper-patch-cords',
+          'name' => 'Copper Patch Cords',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-8',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      9 => 
+      array (
+        'title' => 'Fiber Accessories',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '82',
+          'href' => 'https://device-electronics.com/fiber-accesories',
+          'name' => 'Fiber Accesories',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-9',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      10 => 
+      array (
+        'title' => 'Fiber Optic Cables',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '69',
+          'href' => 'https://device-electronics.com/fiber-optic-cables',
+          'name' => 'Fiber Optic Cables',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-10',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      11 => 
+      array (
+        'title' => 'Fiber Optic Drawer',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '74',
+          'href' => 'https://device-electronics.com/fiber-optic-drawer',
+          'name' => 'Fiber Optic Drawer',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-11',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      12 => 
+      array (
+        'title' => 'Fiber Optic Patch Cords',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '70',
+          'href' => 'https://device-electronics.com/fiber-optic-patch-cords',
+          'name' => 'Fiber Optic Patch Cords',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-12',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      13 => 
+      array (
+        'title' => 'Fluke Networks',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '85',
+          'href' => 'https://device-electronics.com/fluke-networks',
+          'name' => 'Fluke Networks',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-13',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+      14 => 
+      array (
+        'title' => 'Printers and Labels',
+        'link' => 
+        array (
+          'type' => 'category',
+          'id' => '86',
+          'href' => 'https://device-electronics.com/printers-and-labels',
+          'name' => 'Printers and Labels',
+          'total' => NULL,
+          'attrs' => 
+          array (
+          ),
+          'classes' => 
+          array (
+          ),
+        ),
+        'classes' => 
+        array (
+          0 => 'menu-item',
+          1 => 'accordion-menu-item',
+          2 => 'accordion-menu-item-14',
+          'multi-level' => false,
+          'dropdown' => false,
+          'drop-menu' => false,
+        ),
+        'items' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+);
