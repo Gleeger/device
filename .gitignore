@@ -2,4 +2,8 @@ config.php
 index.php
 php.ini
 robots.txt
-.htaccess
+storage/
+storage_old/
+system/
+__MACOSX/
+image/
