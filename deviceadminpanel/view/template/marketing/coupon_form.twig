@@ -87,6 +87,12 @@
                   <input type="text" name="total" value="{{ total }}" placeholder="{{ entry_total }}" id="input-total" class="form-control" />
                 </div>
               </div>
+               <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-max"><span data-toggle="tooltip" title="{{ help_max }}">{{ entry_max }}</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="max_amount" value="{{ max_amount }}" placeholder="{{ entry_max }}" id="input-max" class="form-control" />
+                </div>
+              </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label"><span data-toggle="tooltip" title="{{ help_logged }}">{{ entry_logged }}</span></label>
                 <div class="col-sm-10">
@@ -147,6 +153,19 @@
                     {% endfor %} </div>
                 </div>
               </div>
+              {#jensen#}
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-customer-group"><span data-toggle="tooltip" title="{{ help_customer_group }}">{{ entry_customer_group }}</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="customer_group" value="" placeholder="{{ entry_customer_group }}" id="input-customer-group" class="form-control" />
+                  <div id="coupon-customer-group" class="well well-sm" style="height: 150px; overflow: auto;"> {% for coupon_customer_group in coupon_customer_group %}
+                    <div id="coupon-customer-group{{ coupon_customer_group.customer_group_id }}"><i class="fa fa-minus-circle"></i> {{ coupon_customer_group.name }}
+                      <input type="hidden" name="coupon_customer_group[]" value="{{ coupon_customer_group.customer_group_id }}" />
+                    </div>
+                    {% endfor %} </div>
+                </div>
+              </div>
+              {#jensen end#}
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-date-start">{{ entry_date_start }}</label>
                 <div class="col-sm-3">
@@ -212,7 +231,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript"><!--
+<script type="text/javascript"><!--
 $('input[name=\'product\']').autocomplete({
 	'source': function(request, response) {
 		$.ajax({
@@ -269,6 +288,36 @@ $('input[name=\'category\']').autocomplete({
 $('#coupon-category').delegate('.fa-minus-circle', 'click', function() {
 	$(this).parent().remove();
 });
+
+{#jensen#}
+// Customer Group
+$('input[name=\'customer_group\']').autocomplete({
+	'source': function(request, response) {
+		$.ajax({
+			url: 'index.php?route=customer/customer_group/autocomplete&user_token={{ user_token }}&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',
+			success: function(json) {
+				response($.map(json, function(item) {
+					return {
+						label: item['name'],
+						value: item['customer_group_id']
+					}
+				}));
+			}
+		});
+	},
+	'select': function(item) {
+		$('input[name=\'customer_group\']').val('');
+		
+		$('#coupon-customer-group' + item['value']).remove();
+		
+		$('#coupon-customer-group').append('<div id="coupon-customer-group' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="coupon_customer_group[]" value="' + item['value'] + '" /></div>');
+	}	
+});
+
+$('#coupon-customer-group').delegate('.fa-minus-circle', 'click', function() {
+	$(this).parent().remove();
+});
 //--></script> 
   {% if coupon_id %} 
   <script type="text/javascript"><!--
@@ -276,7 +325,8 @@ $('#history').delegate('.pagination a', 'click', function(e) {
 	e.preventDefault();
 	
 	$('#history').load(this.href);
-});			
+});
+{#jensen end#}			
 
 $('#history').load('index.php?route=marketing/coupon/history&user_token={{ user_token }}&coupon_id={{ coupon_id }}');
 //--></script> 
