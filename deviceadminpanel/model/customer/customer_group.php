@@ -40,6 +40,12 @@ class ModelCustomerCustomerGroup extends Model {
 	public function getCustomerGroups($data = array()) {
 		$sql = "SELECT * FROM " . DB_PREFIX . "customer_group cg LEFT JOIN " . DB_PREFIX . "customer_group_description cgd ON (cg.customer_group_id = cgd.customer_group_id) WHERE cgd.language_id = '" . (int)$this->config->get('config_language_id') . "'";
 
+		//jensen
+		if (!empty($data['filter_name'])) {
+			$sql .= " AND cgd.name LIKE '%" . $this->db->escape($data['filter_name']) . "%'";
+		}
+		//jensen end
+
 		$sort_data = array(
 			'cgd.name',
 			'cg.sort_order'

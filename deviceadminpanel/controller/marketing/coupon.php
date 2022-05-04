@@ -388,6 +388,16 @@ class ControllerMarketingCoupon extends Controller {
 			$data['total'] = '';
 		}
 
+		//jensen
+		if (isset($this->request->post['max_amount'])) {
+			$data['max_amount'] = $this->request->post['max_amount'];
+		} elseif (!empty($coupon_info)) {
+			$data['max_amount'] = $coupon_info['max_amount'];
+		} else {
+			$data['max_amount'] = '';
+		}
+		//jensen end
+
 		if (isset($this->request->post['coupon_product'])) {
 			$products = $this->request->post['coupon_product'];
 		} elseif (isset($this->request->get['coupon_id'])) {
@@ -433,6 +443,31 @@ class ControllerMarketingCoupon extends Controller {
 				);
 			}
 		}
+
+		//jensen
+		if (isset($this->request->post['coupon_customer_group'])) {
+			$customer_groups = $this->request->post['coupon_customer_group'];
+		} elseif (isset($this->request->get['coupon_id'])) {
+			$customer_groups = $this->model_marketing_coupon->getCouponCustomerGroups($this->request->get['coupon_id']);
+		} else {
+			$customer_groups = array();
+		}
+
+		$this->load->model('customer/customer_group');
+
+		$data['coupon_customer_group'] = array();
+
+		foreach ($customer_groups as $customer_group_id) {
+			$customer_group_info = $this->model_customer_customer_group->getCustomerGroup($customer_group_id);
+
+			if ($customer_group_info) {
+				$data['coupon_customer_group'][] = array(
+					'customer_group_id' => $customer_group_info['customer_group_id'],
+					'name'        => $customer_group_info['name']
+				);
+			}
+		}
+		//jensen end
 
 		if (isset($this->request->post['date_start'])) {
 			$data['date_start'] = $this->request->post['date_start'];

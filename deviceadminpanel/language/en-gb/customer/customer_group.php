@@ -18,7 +18,6 @@ $_['entry_name']        = 'Customer Group Name';
 $_['entry_description'] = 'Description';
 $_['entry_approval']    = 'Approve New Customers';
 $_['entry_sort_order']  = 'Sort Order';
-$_['entry_balance']     = 'Balance';
 
 // Help
 $_['help_approval']     = 'Customers must be approved by an administrator before they can login.';

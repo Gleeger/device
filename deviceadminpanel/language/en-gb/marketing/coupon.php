@@ -39,6 +39,10 @@ $_['entry_date_end']      = 'Date End';
 $_['entry_uses_total']    = 'Uses Per Coupon';
 $_['entry_uses_customer'] = 'Uses Per Customer';
 $_['entry_status']        = 'Status';
+//jensen
+$_['entry_max']           = 'Max Amount';
+$_['entry_customer_group']= 'Customer Groups';
+//jensen end
 
 // Help
 $_['help_code']           = 'The code the customer enters to get the discount.';
@@ -49,6 +53,10 @@ $_['help_category']       = 'Choose all products under selected category.';
 $_['help_product']        = 'Choose specific products the coupon will apply to. Select no products to apply coupon to entire cart.';
 $_['help_uses_total']     = 'The maximum number of times the coupon can be used by any customer. Leave blank for unlimited';
 $_['help_uses_customer']  = 'The maximum number of times the coupon can be used by a single customer. Leave blank for unlimited';
+//jensen
+$_['help_max']            = 'The total amount that must be reached before the coupon is valid.';
+$_['help_customer_group'] = 'Choose specific customer groups the coupon will apply to. Select no groups to apply coupon to entire group.';
+//jensen end
 
 // Error
 $_['error_permission']    = 'Warning: You do not have permission to modify coupons!';
