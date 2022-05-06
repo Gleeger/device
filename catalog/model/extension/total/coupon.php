@@ -201,8 +201,8 @@ class ModelExtensionTotalCoupon extends Model {
 				}
 
 				//jensen
-				// If total greater than max discount amount
-				if($total['total'] > $coupon_info['max_amount']){
+				// If total greater than max discount amount and max amount is set
+				if($coupon_info['max_amount'] > 0 && $total['total'] > $coupon_info['max_amount']){
 					$discount_total = $coupon_info['max_amount'];
 				}
 				//jensen end
