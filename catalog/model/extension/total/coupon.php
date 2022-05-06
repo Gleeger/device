@@ -46,7 +46,23 @@ class ModelExtensionTotalCoupon extends Model {
 				$coupon_category_data[] = $category['category_id'];
 			}
 
+
+			//jensen
+			// Customer group
+			$coupon_customer_group_data = array();
+			$customer_group_id = $this->db->query("SELECT customer_group_id FROM `" . DB_PREFIX . "customer` WHERE customer_id = '" . (int)$this->session->data['customer_id'] . "'");
+
+			$coupon_customer_group_query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "coupon_customer_group` WHERE coupon_id = '" . (int)$coupon_query->row['coupon_id'] . "'");
+
+			foreach ($coupon_customer_group_query->rows as $customer_group) {
+				$coupon_customer_group_data[] = $customer_group['customer_group_id'];
+			}
+
+			$cgi_temp = array();
+			//jensen end
+
 			$product_data = array();
+			
 
 			if ($coupon_product_data || $coupon_category_data) {
 				foreach ($this->cart->getProducts() as $product) {
@@ -71,6 +87,20 @@ class ModelExtensionTotalCoupon extends Model {
 					$status = false;
 				}
 			}
+			//jensen
+			else if($coupon_customer_group_data){
+				foreach ($coupon_customer_group_data as $cgi) {
+					if($cgi == $customer_group_id->rows[0]['customer_group_id']){
+						$cgi_temp = $cgi;
+						continue;
+					}
+				}
+
+				if(!$cgi_temp){
+					$status = false;
+				}
+			}
+			//jensen end
 		} else {
 			$status = false;
 		}
@@ -84,6 +114,7 @@ class ModelExtensionTotalCoupon extends Model {
 				'discount'      => $coupon_query->row['discount'],
 				'shipping'      => $coupon_query->row['shipping'],
 				'total'         => $coupon_query->row['total'],
+				'max_amount'	=> $coupon_query->row['max_amount'],
 				'product'       => $product_data,
 				'date_start'    => $coupon_query->row['date_start'],
 				'date_end'      => $coupon_query->row['date_end'],
@@ -168,6 +199,13 @@ class ModelExtensionTotalCoupon extends Model {
 				if ($discount_total > $total['total']) {
 					$discount_total = $total['total'];
 				}
+
+				//jensen
+				// If total greater than max discount amount
+				if($total['total'] > $coupon_info['max_amount']){
+					$discount_total = $coupon_info['max_amount'];
+				}
+				//jensen end
 
 				if ($discount_total > 0) {
 					$total['totals'][] = array(

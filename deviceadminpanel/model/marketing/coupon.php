@@ -149,7 +149,7 @@ class ModelMarketingCoupon extends Model {
 
 	//jensen
 	public function getCouponCustomerGroups($coupon_id) {
-		$coupon_category_data = array();
+		$coupon_customer_group_data = array();
 
 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "coupon_customer_group WHERE coupon_id = '" . (int)$coupon_id . "'");
 
