@@ -54,7 +54,7 @@ $_['help_product']        = 'Choose specific products the coupon will apply to. 
 $_['help_uses_total']     = 'The maximum number of times the coupon can be used by any customer. Leave blank for unlimited';
 $_['help_uses_customer']  = 'The maximum number of times the coupon can be used by a single customer. Leave blank for unlimited';
 //jensen
-$_['help_max']            = 'The total amount that must be reached before the coupon is valid.';
+$_['help_max']            = 'Max total amount discount.';
 $_['help_customer_group'] = 'Choose specific customer groups the coupon will apply to. Select no groups to apply coupon to entire group.';
 //jensen end
 
