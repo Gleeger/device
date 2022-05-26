@@ -20,6 +20,7 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 		$this->load->model('localisation/country');
 		$this->load->model('localisation/zone');
 		$this->load->model('tool/upload');
+		$this->load->model('extension/total/coupon');
 
 		$this->load->language('extension/total/coupon');
 		$this->load->language('extension/total/voucher');
@@ -96,6 +97,13 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 
 		// checkout data
 		$data['checkout_data'] = $this->getCheckoutData($this->model_journal3_checkout->init());
+
+		//jensen
+		if($data['checkout_data']['customer_id'] != 0){
+			unset($this->session->data['coupon']);
+			$this->setCoupon($data['checkout_data']['order_data']['customer_group_id']);
+		}
+		//jensen end	
 
 		// hide payment details for iframe payments
 		$payments = Arr::get($data['checkout_data'], 'quickCheckoutPaymentsPopup', array());
@@ -262,6 +270,7 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 
+
 		$this->renderOutput('journal3/checkout/checkout', $data);
 	}
 
@@ -278,7 +287,7 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 
 		if ($this->config->get($this->journal3->isOC2() ? 'coupon_status' : 'total_coupon_status') && $this->request->post['coupon']) {
 			$this->load->language('extension/total/coupon');
-			$this->load->model('extension/total/coupon');
+			// $this->load->model('extension/total/coupon');
 			$coupon_info = $this->model_extension_total_coupon->getCoupon($this->request->post['coupon']);
 
 			if ($coupon_info) {
@@ -958,6 +967,16 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 
 			if (!$this->customer->getAddressId()) {
 				$this->model_account_customer->editAddressId($this->customer->getId(), $address_id);
+			}
+		}
+	}
+
+	private function setCoupon($customer_group_id){
+		$customer_group = $this->model_account_customer_group->getCustomerGroup($customer_group_id);
+		if($customer_group['special']){
+			$coupon_spec = $this->model_extension_total_coupon->getCouponCustom($customer_group_id);
+			if ($coupon_spec) {
+				$this->session->data['coupon'] = $coupon_spec['code'];
 			}
 		}
 	}

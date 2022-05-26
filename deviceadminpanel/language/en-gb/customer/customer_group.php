@@ -18,9 +18,13 @@ $_['entry_name']        = 'Customer Group Name';
 $_['entry_description'] = 'Description';
 $_['entry_approval']    = 'Approve New Customers';
 $_['entry_sort_order']  = 'Sort Order';
+$_['entry_special_group'] = 'Special Group';
 
 // Help
 $_['help_approval']     = 'Customers must be approved by an administrator before they can login.';
+
+// Special Group
+$_['spec_group']        = 'Auto Apply Coupon if the group registered in a certain coupon.';
 
 // Error
 $_['error_permission']  = 'Warning: You do not have permission to modify customer groups!';

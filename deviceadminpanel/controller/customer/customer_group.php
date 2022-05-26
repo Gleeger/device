@@ -326,6 +326,16 @@ class ControllerCustomerCustomerGroup extends Controller {
 			$data['sort_order'] = '';
 		}
 
+		//jensen 
+		if (isset($this->request->post['special'])) {
+			$data['special'] = $this->request->post['special'];
+		} elseif (!empty($customer_group_info)) {
+			$data['special'] = $customer_group_info['special'];
+		} else {
+			$data['special'] = '';
+		}
+		//jensen end
+
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
