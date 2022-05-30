@@ -99,10 +99,9 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 		$data['checkout_data'] = $this->getCheckoutData($this->model_journal3_checkout->init());
 
 		//jensen
-		if($data['checkout_data']['customer_id'] != 0){
-			unset($this->session->data['coupon']);
-			$this->setCoupon($data['checkout_data']['order_data']['customer_group_id']);
-		}
+		// if($data['checkout_data']['customer_id'] != 0){
+		// 	$this->setCoupon($data['checkout_data']['order_data']['customer_group_id']);
+		// }
 		//jensen end	
 
 		// hide payment details for iframe payments
@@ -671,6 +670,10 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 
 		$total_items = $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0);
 
+		// if($customer_id != 0){
+		// 	$this->setCoupon($data['customer_group_id']);
+		// }
+
 		return array(
 			'stock_warning'              => !$this->cart->hasStock() && $this->config->get('config_stock_warning'),
 			'shipping_required'          => $this->cart->hasShipping(),
@@ -971,14 +974,19 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 		}
 	}
 
-	private function setCoupon($customer_group_id){
-		$customer_group = $this->model_account_customer_group->getCustomerGroup($customer_group_id);
-		if($customer_group['special']){
-			$coupon_spec = $this->model_extension_total_coupon->getCouponCustom($customer_group_id);
-			if ($coupon_spec) {
-				$this->session->data['coupon'] = $coupon_spec['code'];
-			}
-		}
-	}
+	//jensen
+	// private function setCoupon($customer_group_id){
+	// 	$customer_group = $this->model_account_customer_group->getCustomerGroup($customer_group_id);
+	// 	if($customer_group['special']){
+	// 		$coupon_spec = $this->model_extension_total_coupon->getCouponCustom($customer_group_id);
+	// 		if ($coupon_spec) {
+	// 			$this->session->data['coupon'] = $coupon_spec['code'];
+	// 		}
+	// 		else {
+	// 			unset($this->session->data['coupon']);
+	// 		}
+	// 	}
+	// }
+	// jensen
 
 }
