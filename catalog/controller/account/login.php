@@ -78,15 +78,15 @@ class ControllerAccountLogin extends Controller {
 
 			//jensen
 			// Set Coupon for special group
-			$this->load->model('account/customer_group');
-			$customer_group = $this->model_account_customer_group->getCustomerGroup($this->customer->getGroupId());
-			if($customer_group['special']){
-				$this->load->model('extension/total/coupon');
-				$coupon_spec = $this->model_extension_total_coupon->getCouponCustom($customer_group['customer_group_id']);
-				if ($coupon_spec) {
-					$this->session->data['coupon'] = $coupon_spec['code'];
-				}
-			}
+			// $this->load->model('account/customer_group');
+			// $customer_group = $this->model_account_customer_group->getCustomerGroup($this->customer->getGroupId());
+			// if($customer_group['special']){
+			// 	$this->load->model('extension/total/coupon');
+			// 	$coupon_spec = $this->model_extension_total_coupon->getCouponCustom($customer_group['customer_group_id']);
+			// 	if ($coupon_spec) {
+			// 		$this->session->data['coupon'] = $coupon_spec['code'];
+			// 	}
+			// }
 			//jensen end
 
 
