@@ -590,11 +590,71 @@ class ModelJournal3Checkout extends Model {
 	private function payment_methods($total) {
 		$method_data = array();
 
-		if ($this->journal3->isOC2()) {
-			$results = $this->model_extension_extension->getExtensions('payment');
+		//commented by jensen
+		// if ($this->journal3->isOC2()) {
+		// 	$results = $this->model_extension_extension->getExtensions('payment');
 
+		// 	$recurring = $this->cart->hasRecurringProducts();
+
+		// 	foreach ($results as $result) {
+		// 		if ($this->config->get($result['code'] . '_status')) {
+		// 			$this->load->model('extension/payment/' . $result['code']);
+
+		// 			$method = $this->{'model_extension_payment_' . $result['code']}->getMethod($this->session->data['payment_address'], $total);
+
+		// 			if ($method) {
+		// 				if ($recurring) {
+		// 					if (property_exists($this->{'model_extension_payment_' . $result['code']}, 'recurringPayments') && $this->{'model_extension_payment_' . $result['code']}->recurringPayments()) {
+		// 						$method_data[$result['code']] = $method;
+		// 					}
+		// 				} else {
+		// 					$method_data[$result['code']] = $method;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// } else {
+		// 	$results = $this->model_setting_extension->getExtensions('payment');
+
+		// 	$recurring = $this->cart->hasRecurringProducts();
+
+		// 	foreach ($results as $result) {
+		// 		if ($this->config->get('payment_' . $result['code'] . '_status')) {
+		// 			$this->load->model('extension/payment/' . $result['code']);
+
+		// 			$method = $this->{'model_extension_payment_' . $result['code']}->getMethod($this->session->data['payment_address'], $total);
+
+		// 			if ($method) {
+		// 				if ($recurring) {
+		// 					if (property_exists($this->{'model_extension_payment_' . $result['code']}, 'recurringPayments') && $this->{'model_extension_payment_' . $result['code']}->recurringPayments()) {
+		// 						$method_data[$result['code']] = $method;
+		// 					}
+		// 				} else {
+		// 					$method_data[$result['code']] = $method;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		//jensen
+		//check if user is in special group, set payment method to credit only
+		$this->load->model('account/customer_group');
+		$customer_group = $this->model_account_customer_group->getCustomerGroup($this->customer->getGroupId());
+
+		if($customer_group['special']){
+			$credit_method = array(
+				'code'       => 'credit',
+				'title'      => 'Credit',
+				'terms'      => '',
+				'sort_order' => ''
+			);
+			$method_data['credit'] = $credit_method;
+		}
+		//jensen end
+		else if ($this->journal3->isOC2()) {
+			$results = $this->model_setting_extension->getExtensions('payment');
 			$recurring = $this->cart->hasRecurringProducts();
-
 			foreach ($results as $result) {
 				if ($this->config->get($result['code'] . '_status')) {
 					$this->load->model('extension/payment/' . $result['code']);
@@ -614,9 +674,7 @@ class ModelJournal3Checkout extends Model {
 			}
 		} else {
 			$results = $this->model_setting_extension->getExtensions('payment');
-
 			$recurring = $this->cart->hasRecurringProducts();
-
 			foreach ($results as $result) {
 				if ($this->config->get('payment_' . $result['code'] . '_status')) {
 					$this->load->model('extension/payment/' . $result['code']);

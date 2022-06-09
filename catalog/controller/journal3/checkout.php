@@ -427,7 +427,12 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 
 		$json['error'] = $error ? $error : null;
 
+		if(!$error && $data['payment_code'] == 'credit'){
+			$json['redirect'] = $this->url->link('checkout/success');
+		}
+		
 		$this->renderJson('success', $json);
+
 	}
 
 	public function cart_update() {

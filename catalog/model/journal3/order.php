@@ -530,6 +530,20 @@ class ModelJournal3Order extends Model {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "order_total SET order_id = '" . (int)$order_id . "', code = '" . $this->db->escape($total['code']) . "', title = '" . $this->db->escape($total['title']) . "', `value` = '" . (float)$total['value'] . "', sort_order = '" . (int)$total['sort_order'] . "'");
 			}
 		}
+		//jensen
+		//update oc order status for payment code credit with order processed status
+		if($data['payment_code'] == 'credit'){
+			$query = $this->db->query("SELECT order_status_id FROM " . DB_PREFIX . "order_status WHERE name LIKE 'Order Processed'");
+			if ($query->num_rows) {
+				$status = $query->row['order_status_id'];
+				$this->db->query("
+					UPDATE `" . DB_PREFIX . "order` 
+					SET 
+						order_status_id = '" . (int)$status . "'
+					WHERE order_id = '" . (int)$order_id . "'");
+			}
+		}
+		//jensen end
 	}
 
 	private function getOrder($order_id) {
