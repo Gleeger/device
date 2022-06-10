@@ -642,7 +642,7 @@ class ModelJournal3Checkout extends Model {
 		$this->load->model('account/customer_group');
 		$customer_group = $this->model_account_customer_group->getCustomerGroup($this->customer->getGroupId());
 
-		if($customer_group['special']){
+		if($customer_group && $customer_group['special']){
 			$credit_method = array(
 				'code'       => 'credit',
 				'title'      => 'Credit',
