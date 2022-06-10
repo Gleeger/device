@@ -531,18 +531,18 @@ class ModelJournal3Order extends Model {
 			}
 		}
 		//jensen
-		//update oc order status for payment code credit with order processed status
-		if($data['payment_code'] == 'credit'){
-			$query = $this->db->query("SELECT order_status_id FROM " . DB_PREFIX . "order_status WHERE name LIKE 'Order Processed'");
-			if ($query->num_rows) {
-				$status = $query->row['order_status_id'];
-				$this->db->query("
-					UPDATE `" . DB_PREFIX . "order` 
-					SET 
-						order_status_id = '" . (int)$status . "'
-					WHERE order_id = '" . (int)$order_id . "'");
-			}
-		}
+		// //update oc order status for payment code credit with order processed status
+		// if($data['payment_code'] == 'credit'){
+		// 	$query = $this->db->query("SELECT order_status_id FROM " . DB_PREFIX . "order_status WHERE name LIKE 'Order Processed'");
+		// 	if ($query->num_rows) {
+		// 		$status = $query->row['order_status_id'];
+		// 		$this->db->query("
+		// 			UPDATE `" . DB_PREFIX . "order` 
+		// 			SET 
+		// 				order_status_id = '" . (int)$status . "'
+		// 			WHERE order_id = '" . (int)$order_id . "'");
+		// 	}
+		// }
 		//jensen end
 	}
 

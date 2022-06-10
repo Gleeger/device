@@ -420,6 +420,12 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 						$this->registerGuest($json['order_data']);
 					}
 				}
+
+				if(!$error && $data['payment_code'] == 'credit'){
+					$this->load->model('checkout/order');
+					$this->model_checkout_order->addOrderHistory($this->session->data['order_id'], $this->config->get('payment_cod_order_status_id'));
+					$json['redirect'] = $this->url->link('checkout/success');
+				}
 			}
 		} else {
 			$json['redirect'] = $this->model_journal3_links->url('checkout/cart', '', true);
@@ -427,9 +433,7 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 
 		$json['error'] = $error ? $error : null;
 
-		if(!$error && $data['payment_code'] == 'credit'){
-			$json['redirect'] = $this->url->link('checkout/success');
-		}
+		// print_r($this->config->get('payment_credit_order_status_id'));
 		
 		$this->renderJson('success', $json);
 
