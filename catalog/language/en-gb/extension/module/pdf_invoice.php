@@ -9,6 +9,7 @@ $_['text_order_id']   = 'Order ID:';
 $_['text_order_status'] = 'Order Status:';
 $_['text_invoice_no'] = 'Invoice No.:';
 $_['text_paging']     = 'Page %s of %s';
+$_['text_comment']    = 'Comment';
 
 $_['button_invoice']  = 'Download';
 

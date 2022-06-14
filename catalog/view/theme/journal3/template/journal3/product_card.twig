@@ -138,7 +138,7 @@
         {#dicky update clearance sale end#}
         <div class="buttons-wrapper">
             {% if product.is_logged == 0 and "Fluke Networks" in product.category == false %}
-              <div class="see_member_price" style="margin-left:0 !important;font-size:13px;margin-bottom:10px"><a href="{{ base_url }}login" style="color:#004495">Log-in</a> to see member price</div>
+              <div class="see_member_price" style="margin-left:0 !important;font-size:13px;margin-bottom:10px;visibility:hidden"><a login" style="color:#004495">Log-in</a> to see member price</div>
             {% endif %}
           <div class="button-group">
             {% if j3.settings.get('catalogCartStatus') %}
