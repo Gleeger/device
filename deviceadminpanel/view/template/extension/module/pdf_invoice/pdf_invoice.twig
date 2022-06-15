@@ -83,6 +83,11 @@
                 <td>{{ order['payment_method'] }}</td>
               </tr>
               {% if (order['shipping_address']) %}
+                {#dicky update self collection#}
+                {% if order['shipping_method'] == 'Self-Collection' %}
+                  {% set text_shipping_address = 'Collection Address' %}
+                  {% set order = order|merge ({'shipping_address':'8 Kaki Bukit Ave 1 #01-07 <br>Singapore 417941 <br>Tel: 6383 5733 <br>Monday to Friday <br>10am to 5pm'}) %}
+                {% endif %}
                 <tr>
                   <td width="120"><b>{{ text_shipping_method }}</b></td>
                   <td>{{ order['shipping_method'] }}</td>

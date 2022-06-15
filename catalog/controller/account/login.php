@@ -24,6 +24,7 @@ class ControllerAccountLogin extends Controller {
 			unset($this->session->data['vouchers']);
 
 			$customer_info = $this->model_account_customer->getCustomerByToken($this->request->get['token']);
+			// print_r($customer_info);
 
 			if ($customer_info && $this->customer->login($customer_info['email'], '', true)) {
 				// Default Addresses
@@ -74,6 +75,20 @@ class ControllerAccountLogin extends Controller {
 					unset($this->session->data['wishlist'][$key]);
 				}
 			}
+
+			//jensen
+			// Set Coupon for special group
+			// $this->load->model('account/customer_group');
+			// $customer_group = $this->model_account_customer_group->getCustomerGroup($this->customer->getGroupId());
+			// if($customer_group['special']){
+			// 	$this->load->model('extension/total/coupon');
+			// 	$coupon_spec = $this->model_extension_total_coupon->getCouponCustom($customer_group['customer_group_id']);
+			// 	if ($coupon_spec) {
+			// 		$this->session->data['coupon'] = $coupon_spec['code'];
+			// 	}
+			// }
+			//jensen end
+
 
 			// Added strpos check to pass McAfee PCI compliance test (http://forum.opencart.com/viewtopic.php?f=10&t=12043&p=151494#p151295)
 			if (isset($this->request->post['redirect']) && $this->request->post['redirect'] != $this->url->link('account/logout', '', true) && (strpos($this->request->post['redirect'], $this->config->get('config_url')) !== false || strpos($this->request->post['redirect'], $this->config->get('config_ssl')) !== false)) {

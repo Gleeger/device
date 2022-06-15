@@ -1,7 +1,7 @@
 <?php
 class ModelCustomerCustomerGroup extends Model {
 	public function addCustomerGroup($data) {
-		$this->db->query("INSERT INTO " . DB_PREFIX . "customer_group SET approval = '" . (int)$data['approval'] . "', sort_order = '" . (int)$data['sort_order'] . "'");
+		$this->db->query("INSERT INTO " . DB_PREFIX . "customer_group SET approval = '" . (int)$data['approval'] . "', sort_order = '" . (int)$data['sort_order'] . "', special = '" . (int)$data['special'] . "'");
 
 		$customer_group_id = $this->db->getLastId();
 
@@ -13,7 +13,7 @@ class ModelCustomerCustomerGroup extends Model {
 	}
 
 	public function editCustomerGroup($customer_group_id, $data) {
-		$this->db->query("UPDATE " . DB_PREFIX . "customer_group SET approval = '" . (int)$data['approval'] . "', sort_order = '" . (int)$data['sort_order'] . "' WHERE customer_group_id = '" . (int)$customer_group_id . "'");
+		$this->db->query("UPDATE " . DB_PREFIX . "customer_group SET approval = '" . (int)$data['approval'] . "', sort_order = '" . (int)$data['sort_order'] . "', special = '" . (int)$data['special'] . "' WHERE customer_group_id = '" . (int)$customer_group_id . "'");
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "customer_group_description WHERE customer_group_id = '" . (int)$customer_group_id . "'");
 
@@ -39,6 +39,12 @@ class ModelCustomerCustomerGroup extends Model {
 
 	public function getCustomerGroups($data = array()) {
 		$sql = "SELECT * FROM " . DB_PREFIX . "customer_group cg LEFT JOIN " . DB_PREFIX . "customer_group_description cgd ON (cg.customer_group_id = cgd.customer_group_id) WHERE cgd.language_id = '" . (int)$this->config->get('config_language_id') . "'";
+
+		//jensen
+		if (!empty($data['filter_name'])) {
+			$sql .= " AND cgd.name LIKE '%" . $this->db->escape($data['filter_name']) . "%'";
+		}
+		//jensen end
 
 		$sort_data = array(
 			'cgd.name',

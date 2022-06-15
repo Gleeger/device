@@ -249,6 +249,7 @@ class ModelExtensionModulePdfInvoice extends Model {
 			$language['text_shipping_address'] = $oLanguage->get('text_shipping_address');
 			$language['text_payment_method'] = $oLanguage->get('text_payment_method');
 			$language['text_payment_address'] = $oLanguage->get('text_payment_address');
+			$language['text_comment'] = $oLanguage->get('text_comment');
 
 			$language['column_total'] = $oLanguage->get('column_total');
 			$language['column_product'] = $oLanguage->get('column_product');

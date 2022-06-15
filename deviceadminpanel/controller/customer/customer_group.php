@@ -326,6 +326,16 @@ class ControllerCustomerCustomerGroup extends Controller {
 			$data['sort_order'] = '';
 		}
 
+		//jensen 
+		if (isset($this->request->post['special'])) {
+			$data['special'] = $this->request->post['special'];
+		} elseif (!empty($customer_group_info)) {
+			$data['special'] = $customer_group_info['special'];
+		} else {
+			$data['special'] = '';
+		}
+		//jensen end
+
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
@@ -375,4 +385,42 @@ class ControllerCustomerCustomerGroup extends Controller {
 
 		return !$this->error;
 	}
+
+	//jensen
+	public function autocomplete() {
+		$json = array();
+
+		if (isset($this->request->get['filter_name'])) {
+			$this->load->model('customer/customer_group');
+
+			$filter_data = array(
+				'filter_name' => $this->request->get['filter_name'],
+				'sort'        => 'name',
+				'order'       => 'ASC',
+				'start'       => 0,
+				'limit'       => 5
+			);
+
+			$results = $this->model_customer_customer_group->getCustomerGroups($filter_data);
+
+			foreach ($results as $result) {
+				$json[] = array(
+					'customer_group_id' => $result['customer_group_id'],
+					'name'        => strip_tags(html_entity_decode($result['name'], ENT_QUOTES, 'UTF-8'))
+				);
+			}
+		}
+
+		$sort_order = array();
+
+		foreach ($json as $key => $value) {
+			$sort_order[$key] = $value['name'];
+		}
+
+		array_multisort($sort_order, SORT_ASC, $json);
+
+		$this->response->addHeader('Content-Type: application/json');
+		$this->response->setOutput(json_encode($json));
+	}
+	//jensen end
 }

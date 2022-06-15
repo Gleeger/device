@@ -58,7 +58,7 @@
               {% if (order['custom_field'] is not empty) %}
                 {% for custom_field in order['custom_field'] %}
                   {#DICKY#}
-                  {% if (custom_field['name']) != "Job Designation" and (custom_field['name']) != "Date of Birth"%}
+                  {% if (custom_field['name']) == "Company"%}
                     <tr>
                       <td width="90"><b>{{ custom_field['name'] }}:</b></td>
                       <td>{{ custom_field['value'] }}</td>

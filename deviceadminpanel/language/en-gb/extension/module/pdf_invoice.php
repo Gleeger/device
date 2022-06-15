@@ -25,6 +25,7 @@ $_['text_help_complete']       = 'If order status is complete';
 $_['text_help_download']       = 'Add download button to customer \'My Orders\'.';
 $_['text_invoice_no']          = 'Invoice No.:';
 $_['text_help_fonts_download'] = 'More font can be downloaded from <a href="https://github.com/tecnickcom/TCPDF" target="_blank" rel="noopener">tcpdf</a>. Upload to: system/library/shared/tcpdf/fonts';
+$_['text_comment']             = 'Comment';
 
 $_['text_paging'] = 'Page %s of %s';
 
