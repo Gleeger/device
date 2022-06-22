@@ -4,7 +4,6 @@ php.ini
 robots.txt
 storage/
 storage_old/
-system/
 __MACOSX/
 image/
 .htaccess
