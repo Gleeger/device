@@ -38,6 +38,7 @@ $_['column_product']           = 'Product';
 $_['column_model']             = 'Model';
 $_['column_quantity']          = 'Quantity';
 $_['column_price']             = 'Price';
+$_['column_measurement']       = 'UOM';
 
 // Entry
 $_['button_preview']  = 'Preview PDF';

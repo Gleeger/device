@@ -167,7 +167,10 @@ class ModelExtensionModulePdfInvoice extends Model {
 
 			if ($products) {
 				foreach ($products as $product) {
-					$product_data = $this->model_catalog_product->getProduct($product['product_id']);
+					//jensen
+					// $product_data = $this->model_catalog_product->getProduct($product['product_id']);
+					$product_data = $this->model_catalog_product->getProductWithMeasurement($product['product_id']);
+					//jensen end
 
 					$option_data = array();
 					$options = $this->model_sale_order->getOrderOptions($order_info['order_id'], $product['order_product_id']);
@@ -214,6 +217,7 @@ class ModelExtensionModulePdfInvoice extends Model {
 						'image' => $image,
 						'barcode' => $barcode,
 						'quantity' => $product['quantity'],
+						'measurement' => $product_data['measurement'],//jensen unit measurement
 						'url' => HTTP_CATALOG . 'index.php?route=product/product&product_id=' . $product['product_id'],
 						'price' => $this->currency->format($product['price'], $data['order']['currency_code'], $data['order']['currency_value']),
 						'total' => $this->currency->format($product['total'], $data['order']['currency_code'], $data['order']['currency_value']),
@@ -256,6 +260,7 @@ class ModelExtensionModulePdfInvoice extends Model {
 			$language['column_model'] = $oLanguage->get('column_model');
 			$language['column_quantity'] = $oLanguage->get('column_quantity');
 			$language['column_price'] = $oLanguage->get('column_price');
+			$language['column_measurement'] = $oLanguage->get('column_measurement');
 
 			$data = array_merge($data, $language);
 

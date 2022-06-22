@@ -210,10 +210,11 @@ class pdf_invoice {
 
         if ($this->data['order']['products']) {
             $header_settings = array(
-                array('label' => $this->data['column_product'], 'align' => 'L', 'width' => 40),
+                array('label' => $this->data['column_product'], 'align' => 'L', 'width' => 30),
                 array('label' => $this->data['column_model'], 'align' => 'L', 'width' => 20),
                 array('label' => $this->data['column_quantity'], 'align' => 'C', 'width' => 12.5),
                 array('label' => $this->data['column_price'], 'align' => 'R', 'width' => 12.5),
+				array('label' => $this->data['column_measurement'], 'align' => 'C', 'width' => 10),
                 array('label' => $this->data['column_total'], 'align' => 'R', 'width' => 15)
             );
 
@@ -224,13 +225,14 @@ class pdf_invoice {
                 );
             } else {
                 $body_settings = array(
-                    array('align' => 'L', 'width' => 40)
+                    array('align' => 'L', 'width' => 30)
                 );
             }
             array_push($body_settings,
                 array('align' => 'L', 'width' => 20),
                 array('align' => 'C', 'width' => 12.5),
                 array('align' => 'R', 'width' => 12.5),
+				array('align' => 'C', 'width' => 10),
                 array('align' => 'R', 'width' => 15)
             );
             $rows = array();
@@ -259,6 +261,7 @@ class pdf_invoice {
                     $product['model'] . (isset($product['barcode']) ? $product['barcode'] : ''),
                     $product['quantity'],
                     $product['price'],
+					$product['measurement'],
                     $product['total']
                 );
 

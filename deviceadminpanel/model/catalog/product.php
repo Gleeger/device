@@ -364,6 +364,12 @@ class ModelCatalogProduct extends Model {
 		return $query->row;
 	}
 
+	public function getProductWithMeasurement($product_id) {
+		$query = $this->db->query("SELECT DISTINCT *,  (SELECT olcd.unit FROM " . DB_PREFIX . "length_class_description olcd WHERE olcd.length_class_id = p.length_class_id) AS measurement FROM " . DB_PREFIX . "product p LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) WHERE p.product_id = '" . (int)$product_id . "' AND pd.language_id = '" . (int)$this->config->get('config_language_id') . "'");
+
+		return $query->row;
+	}
+
 	public function getProducts($data = array()) {
 		$sql = "SELECT * FROM " . DB_PREFIX . "product p LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "'";
 
