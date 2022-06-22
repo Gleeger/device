@@ -23,14 +23,14 @@ class Smtp {
 		$header .= 'Subject: =?UTF-8?B?' . base64_encode($this->subject) . '?=' . PHP_EOL;
 		$header .= 'Date: ' . date('D, d M Y H:i:s O') . PHP_EOL;
 		//$header .= 'From: =?UTF-8?B?' . base64_encode($this->sender) . '?= <' . $this->from . '>' . PHP_EOL;
-		$header .= 'From: =?UTF-8?B?' . base64_encode($this->sender) . '?= <no-reply@device-electronics.com>' . PHP_EOL;
+		$header .= 'From: =?UTF-8?B?' . base64_encode($this->sender) . '?= <noreply@devicelect.com>' . PHP_EOL;
 
 		if (!$this->reply_to) {
 			//$header .= 'Reply-To: =?UTF-8?B?' . base64_encode($this->sender) . '?= <' . $this->from . '>' . PHP_EOL;
-			$header .= 'Reply-To: =?UTF-8?B?' . base64_encode($this->sender) . '?= <no-reply@device-electronics.com>' . PHP_EOL;
+			$header .= 'Reply-To: =?UTF-8?B?' . base64_encode($this->sender) . '?= <noreply@devicelect.com>' . PHP_EOL;
 		} else {
 			//$header .= 'Reply-To: =?UTF-8?B?' . base64_encode($this->reply_to) . '?= <' . $this->reply_to . '>' . PHP_EOL;
-			$header .= 'Reply-To: =?UTF-8?B?' . base64_encode($this->reply_to) . '?= <no-reply@device-electronics.com>' . PHP_EOL;
+			$header .= 'Reply-To: =?UTF-8?B?' . base64_encode($this->reply_to) . '?= <noreply@devicelect.com>' . PHP_EOL;
 		}
 
 		$header .= 'Return-Path: ' . $this->from . PHP_EOL;
