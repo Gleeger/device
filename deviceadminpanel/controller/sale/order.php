@@ -1818,6 +1818,7 @@ class ControllerSaleOrder extends Controller {
 							'model'    => $product_info['model'],
 							'option'   => $option_data,
 							'quantity' => $product['quantity'],
+							'measurement' => $product['measurement'],
 							'location' => $product_info['location'],
 							'sku'      => $product_info['sku'],
 							'upc'      => $product_info['upc'],
