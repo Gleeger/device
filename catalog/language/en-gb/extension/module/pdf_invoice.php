@@ -14,8 +14,9 @@ $_['text_comment']    = 'Comment';
 $_['button_invoice']  = 'Download';
 
 // Column
-$_['column_total']    = 'Total';
-$_['column_product']  = 'Product';
-$_['column_model']    = 'Model';
-$_['column_quantity'] = 'Quantity';
-$_['column_price']    = 'Price';
+$_['column_total']          = 'Total';
+$_['column_product']        = 'Product';
+$_['column_model']          = 'Model';
+$_['column_quantity']       = 'Quantity';
+$_['column_price']          = 'Price';
+$_['column_measurement']    = 'UOM';
