@@ -312,6 +312,10 @@ class ControllerAccountOrder extends Controller {
 
 			$data['comment'] = nl2br($order_info['comment']);
 
+			// jensen
+			$data['po_number'] = $order_info['po_number'];
+			//jensen end
+
 			// History
 			$data['histories'] = array();
 

@@ -54,6 +54,9 @@
 
         {{ cart_block }}
 
+        {% if special_group %}
+        {{ po_block }}
+        {% else %}
         <div class="checkout-section checkout-payment-details" v-bind:class="[order_data.payment_method ? 'payment-' + order_data.payment_code : '']">
           <div class="title section-title">{{ j3.settings.get('sectionTitlePaymentDetails') }}</div>
           <div class="quick-checkout-payment">
@@ -62,6 +65,7 @@
             </div>
           </div>
         </div>
+        {% endif %}
 
         {{ confirm_block }}
       </div>

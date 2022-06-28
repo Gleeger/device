@@ -165,6 +165,11 @@ class ModelJournal3Order extends Model {
 		// comment
 		$order_data['comment'] = $this->session->data['comment'];
 
+		//jensen
+		//add po if available
+		$order_data['po_number'] = isset($this->session->data['po_number']) ? $this->session->data['po_number'] : '';
+		//jensen end
+
 		// save
 		if ($order_id) {
 			$this->editOrder($order_id, $order_data);
@@ -368,6 +373,7 @@ class ModelJournal3Order extends Model {
 					telephone = '" . $this->db->escape($data['telephone']) . "', 
 					fax = '" . $this->db->escape($data['fax']) . "', 
 					custom_field = '" . $this->db->escape(json_encode($data['custom_field'])) . "', 
+					po_number = '" . $this->db->escape($data['po_number']) . "',
 					payment_firstname = '" . $this->db->escape($data['payment_firstname']) . "', 
 					payment_lastname = '" . $this->db->escape($data['payment_lastname']) . "', 
 					payment_company = '" . $this->db->escape($data['payment_company']) . "', 
@@ -430,6 +436,7 @@ class ModelJournal3Order extends Model {
 					email = '" . $this->db->escape($data['email']) . "', 
 					telephone = '" . $this->db->escape($data['telephone']) . "', 
 					custom_field = '" . $this->db->escape(json_encode($data['custom_field'])) . "', 
+					po_number = '" . $this->db->escape($data['po_number']) . "',
 					payment_firstname = '" . $this->db->escape($data['payment_firstname']) . "', 
 					payment_lastname = '" . $this->db->escape($data['payment_lastname']) . "', 
 					payment_company = '" . $this->db->escape($data['payment_company']) . "', 
@@ -530,6 +537,18 @@ class ModelJournal3Order extends Model {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "order_total SET order_id = '" . (int)$order_id . "', code = '" . $this->db->escape($total['code']) . "', title = '" . $this->db->escape($total['title']) . "', `value` = '" . (float)$total['value'] . "', sort_order = '" . (int)$total['sort_order'] . "'");
 			}
 		}
+
+		//jensen 
+		//edit order with po
+		// if(isset($data['po_number'])){
+		// 	$this->db->query("
+		// 		UPDATE `" . DB_PREFIX . "order` 
+		// 		SET 
+		// 			po_number = '" . $this->db->escape($data['po_number']) . "'
+		// 		WHERE order_id = '" . (int)$order_id . "'");
+		// }
+		//jensen end
+
 		//jensen
 		// //update oc order status for payment code credit with order processed status
 		// if($data['payment_code'] == 'credit'){

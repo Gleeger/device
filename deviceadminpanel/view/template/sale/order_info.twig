@@ -43,6 +43,13 @@
                   <td>{{ shipping_method }}</td>
                 </tr>
               {% endif %}
+              {% if po_number %}
+              {#jensen add po number#}
+                <tr>
+                  <td><button data-toggle="tooltip" title="{{ text_po_number_form }}" class="btn btn-info btn-xs"><i class="fa fa-ticket fa-fw"></i></button></td>
+                  <td>{{ po_number }}</td>
+                </tr>
+              {% endif %}
             </tbody>
 
           </table>

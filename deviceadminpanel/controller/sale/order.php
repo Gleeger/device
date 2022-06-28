@@ -510,6 +510,8 @@ class ControllerSaleOrder extends Controller {
 			$data['shipping_method'] = $order_info['shipping_method'];
 			$data['shipping_code'] = $order_info['shipping_code'];
 
+			$data['po_number'] = $order_info['po_number'];
+
 			// Products
 			$data['order_products'] = array();
 
@@ -978,6 +980,10 @@ class ControllerSaleOrder extends Controller {
 			}
 
 			$data['comment'] = nl2br($order_info['comment']);
+
+			//jensen
+			$data['po_number'] = $order_info['po_number'];
+			//jensen end
 
 			$this->load->model('customer/customer');
 
@@ -1674,7 +1680,8 @@ class ControllerSaleOrder extends Controller {
 					'product'          => $product_data,
 					'voucher'          => $voucher_data,
 					'total'            => $total_data,
-					'comment'          => nl2br($order_info['comment'])
+					'comment'          => nl2br($order_info['comment']),
+					'po_number'		   => $order_info['po_number'],
 				);
 			}
 		}
@@ -1846,7 +1853,8 @@ class ControllerSaleOrder extends Controller {
 					'shipping_address' => $shipping_address,
 					'shipping_method'  => $order_info['shipping_method'],
 					'product'          => $product_data,
-					'comment'          => nl2br($order_info['comment'])
+					'comment'          => nl2br($order_info['comment']),
+					'po_number'		   => $order_info['po_number']
 				);
 			}
 		}
