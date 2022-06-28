@@ -144,7 +144,8 @@ class ModelSaleOrder extends Model {
 				'user_agent'              => $order_query->row['user_agent'],
 				'accept_language'         => $order_query->row['accept_language'],
 				'date_added'              => $order_query->row['date_added'],
-				'date_modified'           => $order_query->row['date_modified']
+				'date_modified'           => $order_query->row['date_modified'],
+				'po_number'				  => $order_query->row['po_number']
 			);
 		} else {
 			return;

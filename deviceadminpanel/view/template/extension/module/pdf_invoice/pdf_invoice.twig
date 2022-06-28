@@ -93,6 +93,13 @@
                   <td>{{ order['shipping_method'] }}</td>
                 </tr>
               {% endif %}
+              {% if (order['po_number']) %}
+                {#jensen add po number#}
+                <tr>
+                  <td width="120"><b>{{ text_po_number }}</b></td>
+                  <td>{{ order['po_number'] }}</td>
+                </tr>
+              {% endif %}
               </tbody>
             </table>
           </td>

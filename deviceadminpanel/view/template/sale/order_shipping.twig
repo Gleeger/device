@@ -37,7 +37,11 @@
             <b>{{ text_order_id }}</b> {{ order.order_id }}<br />
             {% if order.shipping_method %}
             <b>{{ text_shipping_method }}</b> {{ order.shipping_method }}<br />
-            {% endif %}</td>
+            {% endif %}
+             {% if order.po_number %}
+            <b>{{ text_po_number }}</b> {{ order.po_number }}<br />
+            {% endif %}
+          </td>
         </tr>
       </tbody>
     </table>
