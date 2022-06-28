@@ -125,7 +125,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 			}
 
 			if ($data['store']['config_address']) {
-				$data['store']['config_address'] = nl2br($data['store']['config_address']);
+				$address = $data['store']['config_address']."\n UEN: 197800960H | GST Reg: M2-0029520-0";
+				$data['store']['config_address'] = nl2br($address);
 			}
 
 			// Custom fields
