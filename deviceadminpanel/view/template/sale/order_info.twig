@@ -152,6 +152,7 @@
               <td class="text-left">{{ column_product }}</td>
               <td class="text-left">{{ column_model }}</td>
               <td class="text-right">{{ column_quantity }}</td>
+              <td class="text-right">{{ column_measurement }}</td>
               <td class="text-right">{{ column_price }}</td>
               <td class="text-right">{{ column_total }}</td>
             </tr>
@@ -180,6 +181,7 @@
                 </td>
                 <td class="text-left">{{ product.model }}</td>
                 <td class="text-right">{{ product.quantity }}</td>
+                <td class="text-right">{{ product.measurement }}</td>
                 <td class="text-right">{{ product.price }}</td>
                 <td class="text-right">{{ product.total }}</td>
               </tr>
@@ -195,7 +197,7 @@
             {% endfor %}
             {% for total in totals %}
               <tr>
-                <td colspan="4" class="text-right">{{ total.title }}</td>
+                <td colspan="5" class="text-right">{{ total.title }}</td>
                 <td class="text-right">{{ total.text }}</td>
               </tr>
             {% endfor %}

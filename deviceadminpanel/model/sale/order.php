@@ -230,8 +230,9 @@ class ModelSaleOrder extends Model {
 		return $query->rows;
 	}
 
+	//jensen add measurement
 	public function getOrderProducts($order_id) {
-		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "order_product WHERE order_id = '" . (int)$order_id . "'");
+		$query = $this->db->query("SELECT *, (SELECT olcd.unit FROM " . DB_PREFIX . "product p JOIN " . DB_PREFIX . "length_class_description olcd ON p.length_class_id = olcd.length_class_id WHERE p.product_id = op.product_id) AS measurement FROM " . DB_PREFIX . "order_product op WHERE order_id = '" . (int)$order_id . "'");
 
 		return $query->rows;
 	}

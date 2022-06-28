@@ -32,6 +32,7 @@ $_['column_action']         = 'Action';
 $_['column_date_added']     = 'Date Added';
 $_['column_status']         = 'Status';
 $_['column_comment']        = 'Comment';
+$_['column_measurement']    = 'UOM';
 
 // Error
 $_['error_reorder']         = '%s is not currently available to be reordered.';
