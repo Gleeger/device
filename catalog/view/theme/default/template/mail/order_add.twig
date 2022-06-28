@@ -26,8 +26,14 @@
         <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><b>{{ text_order_id }}</b> {{ order_id }}<br />
           <b>{{ text_date_added }}</b> {{ date_added }}<br />
           <b>{{ text_payment_method }}</b> {{ payment_method }}<br />
-          {% if shipping_method %} <b>{{ text_shipping_method }}</b> {{ shipping_method }}
-          {% endif %}</td>
+          {% if shipping_method %} <b>{{ text_shipping_method }}</b> {{ shipping_method }}<br />
+          {% endif %}
+          {% if po_number %}
+            {#jensen add po number#}
+            <b>{{ text_po_number }}</b>
+            {{ po_number }}
+          {% endif %}
+        </td>
         <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><b>{{ text_email }}</b> {{ email }}<br />
           <b>{{ text_telephone }}</b> {{ telephone }}<br />
           <b>{{ text_ip }}</b> {{ ip }}<br />
