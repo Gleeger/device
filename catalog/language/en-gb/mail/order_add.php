@@ -25,4 +25,4 @@ $_['text_total']            = 'Total';
 $_['text_download']         = 'Once your payment has been confirmed you can click on the link below to access your downloadable products:';
 $_['text_comment']          = 'The comments for your order are:';
 $_['text_footer']           = 'Please reply to this e-mail if you have any questions.';
-$_['text_po_number']        = 'Order Number:';
+$_['text_po_number']        = 'PO Number:';
