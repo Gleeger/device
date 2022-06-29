@@ -97,9 +97,9 @@
             {% if product.last_stock != null %}
                 {% if product.last_stock <= 0 %}
                      <br/><span style="color:red">Pre-Order</span>
-                {% elseif product.last_stock - product.quantity <  0 %}
+                {#{% elseif product.last_stock - product.quantity <  0 %}
                     {% set less_product = product.last_stock - product.quantity %}
-                    <br/><span style="color:red">({{less_product|abs}}) quantity to be back ordered.<br>Arrival date will be advised over email.</span>
+                    <br/><span style="color:red">({{less_product|abs}}) quantity to be back ordered.<br>Arrival date will be advised over email.</span>#}
                 {% endif %}
             {% endif %}
           </td>
