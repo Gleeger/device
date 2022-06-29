@@ -218,6 +218,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 
 			if ($products) {
 				foreach ($products as $product) {
+					$value_opt = 1;
+
 					//jensen
 					// $product_data = $this->model_catalog_product->getProduct($product['product_id']);
 					$product_data = $this->model_catalog_product->getProductWithMeasurement($product['product_id']);
@@ -231,10 +233,16 @@ class ModelExtensionModulePdfInvoice extends Model {
 						} else {
 							$value = utf8_substr($option['value'], 0, utf8_strrpos($option['value'], '.'));
 						}
-						$option_data[] = array(
-							'name' => $option['name'],
-							'value' => $value
-						);
+
+						//jensen
+						//commented hide option
+						// $option_data[] = array(
+						// 	'name' => $option['name'],
+						// 	'value' => $value
+						// );
+						$value_opt = preg_replace('/[^0-9]/', '', $value);
+						//jensen end
+
 					}
 
 					$option_string = '';
@@ -257,6 +265,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 						$barcode = false;
 					}
 
+					$quantity = $product['quantity'] * $value_opt;
+
 					$data['order']['products'][] = array(
 						'name' => '<b>' . $product['name'] . '</b>',
 						'model' => $product['model'],
@@ -264,7 +274,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 						'option' => $option_string,
 						'image' => $image,
 						'barcode' => $barcode,
-						'quantity' => $product['quantity'],
+						// 'quantity' => $product['quantity'],
+						'quantity' => $quantity,
 						'measurement' => $product_data['measurement'], //jensen add measurement
 						'last_stock' => $product['last_stock'], //dicky update last_stock for PDF
 						'url' => $this->url->link('product/product', 'product_id=' . $product['product_id']),
