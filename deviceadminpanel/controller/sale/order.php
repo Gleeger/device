@@ -510,6 +510,8 @@ class ControllerSaleOrder extends Controller {
 			$data['shipping_method'] = $order_info['shipping_method'];
 			$data['shipping_code'] = $order_info['shipping_code'];
 
+			$data['po_number'] = $order_info['po_number'];
+
 			// Products
 			$data['order_products'] = array();
 
@@ -910,30 +912,43 @@ class ControllerSaleOrder extends Controller {
 			$products = $this->model_sale_order->getOrderProducts($this->request->get['order_id']);
 
 			foreach ($products as $product) {
+				$value_opt = 1;
 				$option_data = array();
 
 				$options = $this->model_sale_order->getOrderOptions($this->request->get['order_id'], $product['order_product_id']);
 
 				foreach ($options as $option) {
 					if ($option['type'] != 'file') {
-						$option_data[] = array(
-							'name'  => $option['name'],
-							'value' => $option['value'],
-							'type'  => $option['type']
-						);
+						//jensen
+						// $option_data[] = array(
+						// 	'name'  => $option['name'],
+						// 	'value' => $option['value'],
+						// 	'type'  => $option['type']
+						// );
+						$value_opt = preg_replace('/[^0-9]/', '', $option['value']);
+						//jensen end
+
+						
+
 					} else {
 						$upload_info = $this->model_tool_upload->getUploadByCode($option['value']);
 
 						if ($upload_info) {
-							$option_data[] = array(
-								'name'  => $option['name'],
-								'value' => $upload_info['name'],
-								'type'  => $option['type'],
-								'href'  => $this->url->link('tool/upload/download', 'user_token=' . $this->session->data['user_token'] . '&code=' . $upload_info['code'], true)
-							);
+							//jensen
+							// $option_data[] = array(
+							// 	'name'  => $option['name'],
+							// 	'value' => $upload_info['name'],
+							// 	'type'  => $option['type'],
+							// 	'href'  => $this->url->link('tool/upload/download', 'user_token=' . $this->session->data['user_token'] . '&code=' . $upload_info['code'], true)
+							// );
+							$value_opt = preg_replace('/[^0-9]/', '', $upload_info['name']);
+							
+							//jensen end
 						}
 					}
 				}
+
+				$quantity = $product['quantity'] * $value_opt;
 
 				$data['products'][] = array(
 					'order_product_id' => $product['order_product_id'],
@@ -941,7 +956,8 @@ class ControllerSaleOrder extends Controller {
 					'name'    	 	   => $product['name'],
 					'model'    		   => $product['model'],
 					'option'   		   => $option_data,
-					'quantity'		   => $product['quantity'],
+					// 'quantity'		   => $product['quantity'],
+					'quantity'		   => $quantity ,
 					'measurement'	   => $product['measurement'], // jensen add measurement
 					'last_stock'       => $product['last_stock'], // dicky update last stock
 					'price'    		   => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
@@ -978,6 +994,10 @@ class ControllerSaleOrder extends Controller {
 			}
 
 			$data['comment'] = nl2br($order_info['comment']);
+
+			//jensen
+			$data['po_number'] = $order_info['po_number'];
+			//jensen end
 
 			$this->load->model('customer/customer');
 
@@ -1598,6 +1618,8 @@ class ControllerSaleOrder extends Controller {
 				$products = $this->model_sale_order->getOrderProducts($order_id);
 
 				foreach ($products as $product) {
+					$value_opt = 1;
+
 					$option_data = array();
 
 					$options = $this->model_sale_order->getOrderOptions($order_id, $product['order_product_id']);
@@ -1615,17 +1637,25 @@ class ControllerSaleOrder extends Controller {
 							}
 						}
 
-						$option_data[] = array(
-							'name'  => $option['name'],
-							'value' => $value
-						);
+						//jensen
+						//commented hide option
+						// $option_data[] = array(
+						// 	'name' => $option['name'],
+						// 	'value' => $value
+						// );
+						$value_opt = preg_replace('/[^0-9]/', '', $value);
+						//jensen end
+
 					}
+
+					$quantity = $product['quantity'] * $value_opt;
 
 					$product_data[] = array(
 						'name'     => $product['name'],
 						'model'    => $product['model'],
 						'option'   => $option_data,
-						'quantity' => $product['quantity'],
+						// 'quantity' => $product['quantity'],
+						'quantity' => $quantity,
 						'measurement' => $product['measurement'],// jensen add measurement
 						'last_stock' => $product['last_stock'], // dicky update last stock
 						'price'    => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
@@ -1674,7 +1704,8 @@ class ControllerSaleOrder extends Controller {
 					'product'          => $product_data,
 					'voucher'          => $voucher_data,
 					'total'            => $total_data,
-					'comment'          => nl2br($order_info['comment'])
+					'comment'          => nl2br($order_info['comment']),
+					'po_number'		   => $order_info['po_number'],
 				);
 			}
 		}
@@ -1776,6 +1807,7 @@ class ControllerSaleOrder extends Controller {
 				$products = $this->model_sale_order->getOrderProducts($order_id);
 
 				foreach ($products as $product) {
+					$value_opt = 1;
 					$option_weight = 0;
 
 					$product_info = $this->model_catalog_product->getProduct($product['product_id']);
@@ -1798,10 +1830,15 @@ class ControllerSaleOrder extends Controller {
 								}
 							}
 
-							$option_data[] = array(
-								'name'  => $option['name'],
-								'value' => $value
-							);
+							//jensen
+							//commented hide option
+							// $option_data[] = array(
+							// 	'name' => $option['name'],
+							// 	'value' => $value
+							// );
+							//jensen end
+
+							$value_opt = preg_replace('/[^0-9]/', '', $value);
 
 							$product_option_value_info = $this->model_catalog_product->getProductOptionValue($product['product_id'], $option['product_option_value_id']);
 
@@ -1814,11 +1851,14 @@ class ControllerSaleOrder extends Controller {
 							}
 						}
 
+						$quantity = $product['quantity'] * $value_opt;
+
 						$product_data[] = array(
 							'name'     => $product_info['name'],
 							'model'    => $product_info['model'],
 							'option'   => $option_data,
-							'quantity' => $product['quantity'],
+							// 'quantity' => $product['quantity'],
+							'quantity' => $quantity,
 							'measurement' => $product['measurement'],
 							'location' => $product_info['location'],
 							'sku'      => $product_info['sku'],
@@ -1846,7 +1886,8 @@ class ControllerSaleOrder extends Controller {
 					'shipping_address' => $shipping_address,
 					'shipping_method'  => $order_info['shipping_method'],
 					'product'          => $product_data,
-					'comment'          => nl2br($order_info['comment'])
+					'comment'          => nl2br($order_info['comment']),
+					'po_number'		   => $order_info['po_number']
 				);
 			}
 		}

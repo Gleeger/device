@@ -242,6 +242,7 @@ class ControllerAccountOrder extends Controller {
 
 			foreach ($products as $product) {
 				$option_data = array();
+				$value_opt = 1;
 
 				$options = $this->model_account_order->getOrderOptions($this->request->get['order_id'], $product['order_product_id']);
 
@@ -258,10 +259,15 @@ class ControllerAccountOrder extends Controller {
 						}
 					}
 
-					$option_data[] = array(
-						'name'  => $option['name'],
-						'value' => (utf8_strlen($value) > 20 ? utf8_substr($value, 0, 20) . '..' : $value)
-					);
+					//jensen
+					//commented not show option
+					// $option_data[] = array(
+					// 	'name'  => $option['name'],
+					// 	'value' => (utf8_strlen($value) > 20 ? utf8_substr($value, 0, 20) . '..' : $value)
+					// );
+					$value_opt = preg_replace('/[^0-9]/', '', $value);
+					//jensen end
+
 				}
 
 				$product_info = $this->model_catalog_product->getProduct($product['product_id']);
@@ -272,11 +278,14 @@ class ControllerAccountOrder extends Controller {
 					$reorder = '';
 				}
 
+				$quantity = $product['quantity'] * $value_opt;
+
 				$data['products'][] = array(
 					'name'     => $product['name'],
 					'model'    => $product['model'],
 					'option'   => $option_data,
-					'quantity' => $product['quantity'],
+					// 'quantity' => $product['quantity'],
+					'quantity' => $quantity,
 					'measurement' => $product['measurement'],//jensen add measurement
 					'last_stock' => $product['last_stock'],//dicky update last stock
 					'price'    => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
@@ -311,6 +320,10 @@ class ControllerAccountOrder extends Controller {
 			}
 
 			$data['comment'] = nl2br($order_info['comment']);
+
+			// jensen
+			$data['po_number'] = $order_info['po_number'];
+			//jensen end
 
 			// History
 			$data['histories'] = array();

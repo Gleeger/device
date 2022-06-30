@@ -168,6 +168,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 
 			if ($products) {
 				foreach ($products as $product) {
+					$value_opt = 1;
+
 					//jensen
 					// $product_data = $this->model_catalog_product->getProduct($product['product_id']);
 					$product_data = $this->model_catalog_product->getProductWithMeasurement($product['product_id']);
@@ -182,10 +184,16 @@ class ModelExtensionModulePdfInvoice extends Model {
 						} else {
 							$value = utf8_substr($option['value'], 0, utf8_strrpos($option['value'], '.'));
 						}
-						$option_data[] = array(
-							'name' => $option['name'],
-							'value' => $value
-						);
+
+						//jensen
+						//commented hide option
+						// $option_data[] = array(
+						// 	'name' => $option['name'],
+						// 	'value' => $value
+						// );
+						$value_opt = preg_replace('/[^0-9]/', '', $value);
+						//jensen end
+
 					}
 
 					$option_string = '';
@@ -209,6 +217,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 						$barcode = false;
 					}
 
+					$quantity = $product['quantity'] * $value_opt;
+
 					$data['order']['products'][] = array(
 						'name' => '<b>' . $product['name'] . '</b>',
 						'model' => $product['model'],
@@ -217,7 +227,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 						'option' => $option_string,
 						'image' => $image,
 						'barcode' => $barcode,
-						'quantity' => $product['quantity'],
+						// 'quantity' => $product['quantity'],
+						'quantity' => $quantity,
 						'measurement' => $product_data['measurement'],//jensen unit measurement
 						'url' => HTTP_CATALOG . 'index.php?route=product/product&product_id=' . $product['product_id'],
 						'price' => $this->currency->format($product['price'], $data['order']['currency_code'], $data['order']['currency_value']),
@@ -255,6 +266,7 @@ class ModelExtensionModulePdfInvoice extends Model {
 			$language['text_payment_method'] = $oLanguage->get('text_payment_method');
 			$language['text_payment_address'] = $oLanguage->get('text_payment_address');
 			$language['text_comment'] = $oLanguage->get('text_comment');
+			$language['text_po_number'] = $oLanguage->get('text_po_number');
 
 			$language['column_total'] = $oLanguage->get('column_total');
 			$language['column_product'] = $oLanguage->get('column_product');

@@ -41,7 +41,12 @@
             <b>{{ text_payment_method }}</b> {{ order.payment_method }}<br />
             {% if order.shipping_method %}
             <b>{{ text_shipping_method }}</b> {{ order.shipping_method }}<br />
-            {% endif %}</td>
+            {% endif %}
+            {% if order.po_number %}
+            <b>{{ text_po_number }}</b> {{ order.po_number }}<br />
+            {% endif %}
+          </td>
+
         </tr>
       </tbody>
     </table>
@@ -92,9 +97,9 @@
             {% if product.last_stock != null %}
                 {% if product.last_stock <= 0 %}
                      <br/><span style="color:red">Pre-Order</span>
-                {% elseif product.last_stock - product.quantity <  0 %}
+                {#{% elseif product.last_stock - product.quantity <  0 %}
                     {% set less_product = product.last_stock - product.quantity %}
-                    <br/><span style="color:red">({{less_product|abs}}) quantity to be back ordered.<br>Arrival date will be advised over email.</span>
+                    <br/><span style="color:red">({{less_product|abs}}) quantity to be back ordered.<br>Arrival date will be advised over email.</span>#}
                 {% endif %}
             {% endif %}
           </td>
@@ -116,7 +121,7 @@
         {% endfor %}
         {% for total in order.total %}
         <tr>
-          <td class="text-right" colspan="4"><b>{{ total.title }}</b></td>
+          <td class="text-right" colspan="5"><b>{{ total.title }}</b></td>
           <td class="text-right">{{ total.text }}</td>
         </tr>
         {% endfor %}

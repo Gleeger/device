@@ -85,6 +85,10 @@ class ControllerMailOrder extends Controller {
 		$data['text_price'] = $language->get('text_price');
 		$data['text_total'] = $language->get('text_total');
 		$data['text_footer'] = $language->get('text_footer');
+		//jensen
+		//add po number
+		$data['text_po_number'] = $language->get('text_po_number');
+		//jensen end
 
 		$data['logo'] = $order_info['store_url'] . 'image/' . $this->config->get('config_logo');
 		$data['store_name'] = $order_info['store_name'];
@@ -105,6 +109,10 @@ class ControllerMailOrder extends Controller {
 		$data['email'] = $order_info['email'];
 		$data['telephone'] = $order_info['telephone'];
 		$data['ip'] = $order_info['ip'];
+
+		//jensen
+		$data['po_number'] = $order_info['po_number'];
+		//jensen end
 
 		$order_status_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "order_status WHERE order_status_id = '" . (int)$order_status_id . "' AND language_id = '" . (int)$order_info['language_id'] . "'");
 	

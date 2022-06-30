@@ -303,6 +303,11 @@ $(function () {
 				data['order_data']['comment'] = $('.section-comments textarea').val();
 				data['captcha'] = $('[name="captcha"]').val();
 				data['g-recaptcha-response'] = $('[name="g-recaptcha-response"]').val();
+				//jensen
+				//get po number
+				data['order_data']['po_number'] = $('#input-po-number').val();
+				//jensen end
+				
 
 				window['_QuickCheckoutAjaxSave'] = this.ajax({
 					url: 'index.php?route=journal3/checkout/save' + (confirm ? '&confirm=true' : ''),

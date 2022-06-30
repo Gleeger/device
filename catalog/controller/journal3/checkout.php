@@ -249,6 +249,20 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 			$newsletter = false;
 		}
 
+
+
+		//jensen
+		//check if special group apply po section
+		$customer_group = $this->model_account_customer_group->getCustomerGroup($this->customer->getGroupId());
+		$data['special_group'] = $customer_group['special'];
+		if($customer_group['special']){
+			$data['po_block'] = $this->renderView('journal3/checkout/po', array(
+				'title_page'		=> 'PO Number',
+				'entry_po_number'   => 'Input your PO Number here',
+			));
+		}
+		//jensen end
+
 		$data['confirm_block'] = $this->renderView('journal3/checkout/confirm', array(
 			'captcha'         => $captcha,
 			'text_loading'    => $this->language->get('text_loading'),
@@ -268,7 +282,6 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-
 
 		$this->renderOutput('journal3/checkout/checkout', $data);
 	}
@@ -344,6 +357,16 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 		} else {
 			unset($this->session->data['reward']);
 		}
+
+		//jensen 
+		//ad po if payment credit
+		if($this->request->post['order_data']['payment_code'] == 'credit' && $this->request->post['order_data']['po_number']){
+			$this->session->data['po_number'] = $this->request->post['order_data']['po_number'];
+		}
+		else{
+			unset($this->session->data['po_number']);
+		}
+		//jensen end
 
 		$data = $this->model_journal3_checkout->update();
 
