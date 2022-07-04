@@ -254,12 +254,14 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 		//jensen
 		//check if special group apply po section
 		$customer_group = $this->model_account_customer_group->getCustomerGroup($this->customer->getGroupId());
-		$data['special_group'] = $customer_group['special'];
-		if($customer_group['special']){
-			$data['po_block'] = $this->renderView('journal3/checkout/po', array(
-				'title_page'		=> 'PO Number',
-				'entry_po_number'   => 'Input your PO Number here',
-			));
+		if($customer_group){
+			$data['special_group'] = $customer_group['special'];
+			if($customer_group['special']){
+				$data['po_block'] = $this->renderView('journal3/checkout/po', array(
+					'title_page'		=> 'PO Number',
+					'entry_po_number'   => 'Input your PO Number here',
+				));
+			}
 		}
 		//jensen end
 
@@ -514,6 +516,18 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 
 	public function payment() {
 		$this->response->setOutput($this->load->controller('extension/payment/' . Arr::get($this->session->data, 'payment_method.code')));
+		// if(Arr::get($this->session->data, 'payment_method.code') == 'credit'){
+		// 	$json = array();
+		// 	$this->load->model('checkout/order');
+		// 	$this->model_checkout_order->addOrderHistory($this->session->data['order_id'], 18);
+		// 	$json['redirect'] = $this->url->link('checkout/success');
+
+		// 	$this->response->addHeader('Content-Type: application/json');
+		// 	$this->response->setOutput(json_encode($json));		
+		// }
+		// else{
+		// 	$this->response->setOutput($this->load->controller('extension/payment/' . Arr::get($this->session->data, 'payment_method.code')));
+		// }
 	}
 
 	private function totals($totals) {

@@ -265,7 +265,12 @@ class ModelExtensionModulePdfInvoice extends Model {
 						$barcode = false;
 					}
 
-					$quantity = $product['quantity'] * $value_opt;
+					if($product['model'] == 'Training'){
+						$quantity = $product['quantity'];
+					}
+					else {
+						$quantity = $product['quantity'] * $value_opt;
+					}
 
 					$data['order']['products'][] = array(
 						'name' => '<b>' . $product['name'] . '</b>',
