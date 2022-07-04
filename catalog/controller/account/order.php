@@ -278,7 +278,12 @@ class ControllerAccountOrder extends Controller {
 					$reorder = '';
 				}
 
-				$quantity = $product['quantity'] * $value_opt;
+				if($product['model'] == 'Training'){
+					$quantity = $product['quantity'];
+				}
+				else {
+					$quantity = $product['quantity'] * $value_opt;
+				}
 
 				$data['products'][] = array(
 					'name'     => $product['name'],

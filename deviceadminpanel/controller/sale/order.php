@@ -948,7 +948,12 @@ class ControllerSaleOrder extends Controller {
 					}
 				}
 
-				$quantity = $product['quantity'] * $value_opt;
+				if($product['model'] == 'Training'){
+					$quantity = $product['quantity'];
+				}
+				else {
+					$quantity = $product['quantity'] * $value_opt;
+				}
 
 				$data['products'][] = array(
 					'order_product_id' => $product['order_product_id'],
@@ -1648,7 +1653,13 @@ class ControllerSaleOrder extends Controller {
 
 					}
 
-					$quantity = $product['quantity'] * $value_opt;
+					if($product['model'] == 'Training'){
+						$quantity = $product['quantity'];
+					}
+					else {
+						$quantity = $product['quantity'] * $value_opt;
+					}
+						
 
 					$product_data[] = array(
 						'name'     => $product['name'],
@@ -1851,7 +1862,12 @@ class ControllerSaleOrder extends Controller {
 							}
 						}
 
-						$quantity = $product['quantity'] * $value_opt;
+						if($product['model'] == 'Training'){
+							$quantity = $product['quantity'];
+						}
+						else {
+							$quantity = $product['quantity'] * $value_opt;
+						}
 
 						$product_data[] = array(
 							'name'     => $product_info['name'],
