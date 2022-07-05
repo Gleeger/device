@@ -275,9 +275,10 @@ $(function () {
 			save: function (confirm) {
 				this.error = {};
 
-				if (window['_QuickCheckoutAjaxSave']) {
-					window['_QuickCheckoutAjaxSave'].abort();
-				}
+				//commented by jensen (test because double click on confirm upon checkout with credit payment)
+				// if (window['_QuickCheckoutAjaxSave']) {
+				// 	window['_QuickCheckoutAjaxSave'].abort();
+				// }
 
 				if (confirm) {
 					loader('.quick-checkout-wrapper', true);
@@ -313,7 +314,9 @@ $(function () {
 					url: 'index.php?route=journal3/checkout/save' + (confirm ? '&confirm=true' : ''),
 					data: data,
 					success: function (json) {
-						window['_QuickCheckoutAjaxSave'] = null;
+						//commented by jensen (test because double click on confirm upon checkout with credit payment)
+						// window['_QuickCheckoutAjaxSave'] = null;
+
 						this.update(json, confirm);
 					}.bind(this)
 				});
@@ -347,6 +350,7 @@ $(function () {
 					$('#cart-total').html(json.response.total);
 					$('.cart-content > ul').html($(json.response.cart).find('.cart-content > ul').html());
 					$('#cart-items.count-badge').html(json.response.total_items);
+
 
 					if (json.response.error) {
 						$('#quick-checkout-button-confirm').button('reset');
