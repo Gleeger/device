@@ -100,8 +100,10 @@ class ControllerCheckoutCart extends Controller {
 				// Display prices
 				if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
 					$unit_price = $this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax'));
+					$base_price_taxed = $this->tax->calculate($product['base_price'], $product['tax_class_id'], $this->config->get('config_tax'));
 					
-					$price = $this->currency->format($unit_price, $this->session->data['currency']);
+					// $price = $this->currency->format($unit_price, $this->session->data['currency']); // Jensen 6 Juli 2022 change option price to base product price
+					$price = $this->currency->format($base_price_taxed, $this->session->data['currency']);
 					$total = $this->currency->format($unit_price * $product['quantity'], $this->session->data['currency']);
 				} else {
 					$price = false;
