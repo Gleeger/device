@@ -645,7 +645,7 @@ class ModelJournal3Checkout extends Model {
 		if($customer_group && $customer_group['special']){
 			$credit_method = array(
 				'code'       => 'credit',
-				'title'      => 'Credit Term',
+				'title'      => 'Credit Terms',
 				'terms'      => '',
 				'sort_order' => ''
 			);
