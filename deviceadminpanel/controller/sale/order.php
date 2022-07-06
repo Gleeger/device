@@ -955,6 +955,8 @@ class ControllerSaleOrder extends Controller {
 					$quantity = $product['quantity'] * $value_opt;
 				}
 
+				$base_price = $this->currency->format(($product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0)) / $quantity, $order_info['currency_code'], $order_info['currency_value']);
+
 				$data['products'][] = array(
 					'order_product_id' => $product['order_product_id'],
 					'product_id'       => $product['product_id'],
@@ -965,7 +967,8 @@ class ControllerSaleOrder extends Controller {
 					'quantity'		   => $quantity ,
 					'measurement'	   => $product['measurement'], // jensen add measurement
 					'last_stock'       => $product['last_stock'], // dicky update last stock
-					'price'    		   => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
+					// 'price'    		   => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']), jensen hide change to base product price
+					'price'			   => $base_price,
 					'total'    		   => $this->currency->format($product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0), $order_info['currency_code'], $order_info['currency_value']),
 					'href'     		   => $this->url->link('catalog/product/edit', 'user_token=' . $this->session->data['user_token'] . '&product_id=' . $product['product_id'], true)
 				);
@@ -1660,6 +1663,7 @@ class ControllerSaleOrder extends Controller {
 						$quantity = $product['quantity'] * $value_opt;
 					}
 						
+					$base_price = $this->currency->format(($product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0)) / $quantity, $order_info['currency_code'], $order_info['currency_value']);
 
 					$product_data[] = array(
 						'name'     => $product['name'],
@@ -1669,7 +1673,8 @@ class ControllerSaleOrder extends Controller {
 						'quantity' => $quantity,
 						'measurement' => $product['measurement'],// jensen add measurement
 						'last_stock' => $product['last_stock'], // dicky update last stock
-						'price'    => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
+						// 'price'    => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']), // jensen hide change to base product price
+						'price'    => $base_price,
 						'total'    => $this->currency->format($product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0), $order_info['currency_code'], $order_info['currency_value'])
 					);
 				}

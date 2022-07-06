@@ -272,6 +272,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 						$quantity = $product['quantity'] * $value_opt;
 					}
 
+					$base_price = $this->currency->format($product['total'] / $quantity, $data['order']['currency_code'], $data['order']['currency_value']);
+
 					$data['order']['products'][] = array(
 						'name' => '<b>' . $product['name'] . '</b>',
 						'model' => $product['model'],
@@ -284,7 +286,8 @@ class ModelExtensionModulePdfInvoice extends Model {
 						'measurement' => $product_data['measurement'], //jensen add measurement
 						'last_stock' => $product['last_stock'], //dicky update last_stock for PDF
 						'url' => $this->url->link('product/product', 'product_id=' . $product['product_id']),
-						'price' => $this->currency->format($product['price'], $data['order']['currency_code'], $data['order']['currency_value']),
+						// 'price' => $this->currency->format($product['price'], $data['order']['currency_code'], $data['order']['currency_value']),//jensen hide change to base product price
+						'price' => $base_price,
 						'total' => $this->currency->format($product['total'], $data['order']['currency_code'], $data['order']['currency_value']),
                         'price_with_tax' => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $data['order']['currency_code'], $data['order']['currency_value']),
                         'total_with_tax' => $this->currency->format($product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0), $data['order']['currency_code'], $data['order']['currency_value'])

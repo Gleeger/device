@@ -285,6 +285,8 @@ class ControllerAccountOrder extends Controller {
 					$quantity = $product['quantity'] * $value_opt;
 				}
 
+				$base_price = $this->currency->format(($product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0)) / $quantity, $order_info['currency_code'], $order_info['currency_value']);
+
 				$data['products'][] = array(
 					'name'     => $product['name'],
 					'model'    => $product['model'],
@@ -293,7 +295,8 @@ class ControllerAccountOrder extends Controller {
 					'quantity' => $quantity,
 					'measurement' => $product['measurement'],//jensen add measurement
 					'last_stock' => $product['last_stock'],//dicky update last stock
-					'price'    => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
+					// 'price'    => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']), // jensen hide change with base product price
+					'price'	   => $base_price,
 					'total'    => $this->currency->format($product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0), $order_info['currency_code'], $order_info['currency_value']),
 					'reorder'  => $reorder,
 					'return'   => $this->url->link('account/return/add', 'order_id=' . $order_info['order_id'] . '&product_id=' . $product['product_id'], true)
