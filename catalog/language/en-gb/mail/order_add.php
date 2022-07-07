@@ -26,3 +26,4 @@ $_['text_download']         = 'Once your payment has been confirmed you can clic
 $_['text_comment']          = 'The comments for your order are:';
 $_['text_footer']           = 'Please reply to this e-mail if you have any questions.';
 $_['text_po_number']        = 'PO Number:';
+$_['text_measurement']      = 'UOM';

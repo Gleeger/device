@@ -191,7 +191,13 @@ class ModelExtensionModulePdfInvoice extends Model {
 						// 	'name' => $option['name'],
 						// 	'value' => $value
 						// );
-						$value_opt = preg_replace('/[^0-9]/', '', $value);
+						// $value_opt = preg_replace('/[^0-9]/', '', $value);
+						if(strpos($value,"(")){
+							$value_opt = preg_match("/\(\K[-\d_]+/", $value, $result) ? $result[0] : 'no match';
+						}
+						else{
+							$value_opt = preg_replace('/[^0-9]/', '', $value);
+						}
 						//jensen end
 
 					}
@@ -217,7 +223,7 @@ class ModelExtensionModulePdfInvoice extends Model {
 						$barcode = false;
 					}
 
-					if($product['model'] == 'Training'){
+					if($product['model'] == 'Training' || $value_opt == 'no match'){
 						$quantity = $product['quantity'];
 					}
 					else {
