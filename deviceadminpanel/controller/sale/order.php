@@ -925,7 +925,13 @@ class ControllerSaleOrder extends Controller {
 						// 	'value' => $option['value'],
 						// 	'type'  => $option['type']
 						// );
-						$value_opt = preg_replace('/[^0-9]/', '', $option['value']);
+						// $value_opt = preg_replace('/[^0-9]/', '', $option['value']);
+						if(strpos($option['value'],"(")){
+							$value_opt = preg_match("/\(\K[-\d_]+/", $option['value'], $result) ? $result[0] : 'no match';
+						}
+						else{
+							$value_opt = preg_replace('/[^0-9]/', '', $option['value']);
+						}
 						//jensen end
 
 						
@@ -941,14 +947,20 @@ class ControllerSaleOrder extends Controller {
 							// 	'type'  => $option['type'],
 							// 	'href'  => $this->url->link('tool/upload/download', 'user_token=' . $this->session->data['user_token'] . '&code=' . $upload_info['code'], true)
 							// );
-							$value_opt = preg_replace('/[^0-9]/', '', $upload_info['name']);
+							// $value_opt = preg_replace('/[^0-9]/', '', $upload_info['name']);
+							if(strpos($upload_info['name'],"(")){
+								$value_opt = preg_match("/\(\K[-\d_]+/", $upload_info['name'], $result) ? $result[0] : 'no match';
+							}
+							else{
+								$value_opt = preg_replace('/[^0-9]/', '', $upload_info['name']);
+							}
 							
 							//jensen end
 						}
 					}
 				}
 
-				if($product['model'] == 'Training'){
+				if($product['model'] == 'Training' || $value_opt == 'no match'){
 					$quantity = $product['quantity'];
 				}
 				else {
@@ -1652,12 +1664,18 @@ class ControllerSaleOrder extends Controller {
 						// 	'name' => $option['name'],
 						// 	'value' => $value
 						// );
-						$value_opt = preg_replace('/[^0-9]/', '', $value);
+						// $value_opt = preg_replace('/[^0-9]/', '', $value);
+						if(strpos($value,"(")){
+							$value_opt = preg_match("/\(\K[-\d_]+/", $value, $result) ? $result[0] : 'no match';
+						}
+						else{
+							$value_opt = preg_replace('/[^0-9]/', '', $value);
+						}
 						//jensen end
 
 					}
 
-					if($product['model'] == 'Training'){
+					if($product['model'] == 'Training' || $value_opt == 'no match'){
 						$quantity = $product['quantity'];
 					}
 					else {
@@ -1854,9 +1872,15 @@ class ControllerSaleOrder extends Controller {
 							// 	'name' => $option['name'],
 							// 	'value' => $value
 							// );
+							// $value_opt = preg_replace('/[^0-9]/', '', $value);
+							if(strpos($value,"(")){
+								$value_opt = preg_match("/\(\K[-\d_]+/", $value, $result) ? $result[0] : 'no match';
+							}
+							else{
+								$value_opt = preg_replace('/[^0-9]/', '', $value);
+							}
 							//jensen end
 
-							$value_opt = preg_replace('/[^0-9]/', '', $value);
 
 							$product_option_value_info = $this->model_catalog_product->getProductOptionValue($product['product_id'], $option['product_option_value_id']);
 
@@ -1869,7 +1893,7 @@ class ControllerSaleOrder extends Controller {
 							}
 						}
 
-						if($product['model'] == 'Training'){
+						if($product['model'] == 'Training' || $value_opt == 'no match'){
 							$quantity = $product['quantity'];
 						}
 						else {

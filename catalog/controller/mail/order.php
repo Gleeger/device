@@ -82,6 +82,7 @@ class ControllerMailOrder extends Controller {
 		$data['text_product'] = $language->get('text_product');
 		$data['text_model'] = $language->get('text_model');
 		$data['text_quantity'] = $language->get('text_quantity');
+		$data['text_measurement'] = $language->get('text_measurement');
 		$data['text_price'] = $language->get('text_price');
 		$data['text_total'] = $language->get('text_total');
 		$data['text_footer'] = $language->get('text_footer');
@@ -203,6 +204,7 @@ class ControllerMailOrder extends Controller {
 
 		foreach ($order_products as $order_product) {
 			$option_data = array();
+			$value_opt = 1;
 
 			$order_options = $this->model_checkout_order->getOrderOptions($order_info['order_id'], $order_product['order_product_id']);
 
@@ -219,19 +221,40 @@ class ControllerMailOrder extends Controller {
 					}
 				}
 
-				$option_data[] = array(
-					'name'  => $order_option['name'],
-					'value' => (utf8_strlen($value) > 20 ? utf8_substr($value, 0, 20) . '..' : $value)
-				);
+				// jensen
+				// $option_data[] = array(
+				// 	'name'  => $order_option['name'],
+				// 	'value' => (utf8_strlen($value) > 20 ? utf8_substr($value, 0, 20) . '..' : $value)
+				// );
+				if(strpos($value,"(")){
+					$value_opt = preg_match("/\(\K[-\d_]+/", $value, $result) ? $result[0] : 'no match';
+				}
+				else{
+					$value_opt = preg_replace('/[^0-9]/', '', $value);
+				}
+				// jensen end
 			}
+
+			if($order_product['model'] == 'Training' || $value_opt == 'no match'){
+				$quantity = $order_product['quantity'];
+			}
+			else {
+				$quantity = $order_product['quantity'] * $value_opt;
+			}
+
+			$base_price = $this->currency->format($order_product['total'] / $quantity, $order_info['currency_code'], $order_info['currency_value']);
 
 			$data['products'][] = array(
 				'name'     => $order_product['name'],
 				'model'    => $order_product['model'],
 				'option'   => $option_data,
-				'quantity' => $order_product['quantity'],
+				// 'quantity' => $order_product['quantity'],
+				'quantity'	=> $quantity,
+				'measurement' => $order_product['measurement'], //jensen add measurement
 				'last_stock' => $order_product['last_stock'], //dicky update last stock
-				'price'    => $this->currency->format($order_product['price'] + ($this->config->get('config_tax') ? $order_product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
+				// 'price'    => $this->currency->format($order_product['price'] + ($this->config->get('config_tax') ? $order_product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']), // jensen hide change to base product price
+				'price'		=> $base_price,
+				'total_without_tax'		=>$this->currency->format($order_product['total'], $order_info['currency_code'], $order_info['currency_value']),
 				'total'    => $this->currency->format($order_product['total'] + ($this->config->get('config_tax') ? ($order_product['tax'] * $order_product['quantity']) : 0), $order_info['currency_code'], $order_info['currency_value'])
 			);
 		}

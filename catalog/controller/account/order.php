@@ -265,7 +265,13 @@ class ControllerAccountOrder extends Controller {
 					// 	'name'  => $option['name'],
 					// 	'value' => (utf8_strlen($value) > 20 ? utf8_substr($value, 0, 20) . '..' : $value)
 					// );
-					$value_opt = preg_replace('/[^0-9]/', '', $value);
+					// $value_opt = preg_replace('/[^0-9]/', '', $value);
+					if(strpos($value,"(")){
+						$value_opt = preg_match("/\(\K[-\d_]+/", $value, $result) ? $result[0] : 'no match';
+					}
+					else{
+						$value_opt = preg_replace('/[^0-9]/', '', $value);
+					}
 					//jensen end
 
 				}
@@ -278,7 +284,7 @@ class ControllerAccountOrder extends Controller {
 					$reorder = '';
 				}
 
-				if($product['model'] == 'Training'){
+				if($product['model'] == 'Training' || $value_opt == 'no match'){
 					$quantity = $product['quantity'];
 				}
 				else {
