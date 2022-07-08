@@ -627,8 +627,7 @@ class ControllerJournal3Checkout extends \Journal3\Opencart\Controller {
 				'subtract'   => $product['subtract'],
 				// 'price'      => $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']), // Jensen 6 Juli 2022 change to product base price 
 				'price'      => $this->currency->format($this->tax->calculate($product['base_price'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']),
-				// 'total'      => $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity'], $this->session->data['currency']), // Jensen 6 Juli 2022 change to total from price
-				'total'      => $this->currency->format($this->tax->calculate($product['total'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity'], $this->session->data['currency']),
+				'total'      => $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity'], $this->session->data['currency']),
 				'href'       => str_replace('&amp;', '&', $this->url->link('product/product', 'product_id=' . $product['product_id'])),
 				'thumb'      => $thumb,
 				'thumb2x'    => $thumb2x,
