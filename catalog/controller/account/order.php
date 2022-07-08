@@ -267,7 +267,7 @@ class ControllerAccountOrder extends Controller {
 					// );
 					// $value_opt = preg_replace('/[^0-9]/', '', $value);
 					if(strpos($value,"(")){
-						$value_opt = preg_match("/\(\K[-\d_]+/", $value, $result) ? $result[0] : 'no match';
+						$value_opt = preg_match("/\(\K[\d]+/", $value, $result) ? $result[0] : 'no match';
 					}
 					else{
 						$value_opt = preg_replace('/[^0-9]/', '', $value);

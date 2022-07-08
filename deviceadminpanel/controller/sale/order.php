@@ -927,7 +927,7 @@ class ControllerSaleOrder extends Controller {
 						// );
 						// $value_opt = preg_replace('/[^0-9]/', '', $option['value']);
 						if(strpos($option['value'],"(")){
-							$value_opt = preg_match("/\(\K[-\d_]+/", $option['value'], $result) ? $result[0] : 'no match';
+							$value_opt = preg_match("/\(\K[\d]+/", $option['value'], $result) ? $result[0] : 'no match';
 						}
 						else{
 							$value_opt = preg_replace('/[^0-9]/', '', $option['value']);
@@ -949,7 +949,7 @@ class ControllerSaleOrder extends Controller {
 							// );
 							// $value_opt = preg_replace('/[^0-9]/', '', $upload_info['name']);
 							if(strpos($upload_info['name'],"(")){
-								$value_opt = preg_match("/\(\K[-\d_]+/", $upload_info['name'], $result) ? $result[0] : 'no match';
+								$value_opt = preg_match("/\(\K[\d]+/", $upload_info['name'], $result) ? $result[0] : 'no match';
 							}
 							else{
 								$value_opt = preg_replace('/[^0-9]/', '', $upload_info['name']);
@@ -1666,7 +1666,7 @@ class ControllerSaleOrder extends Controller {
 						// );
 						// $value_opt = preg_replace('/[^0-9]/', '', $value);
 						if(strpos($value,"(")){
-							$value_opt = preg_match("/\(\K[-\d_]+/", $value, $result) ? $result[0] : 'no match';
+							$value_opt = preg_match("/\(\K[\d]+/", $value, $result) ? $result[0] : 'no match';
 						}
 						else{
 							$value_opt = preg_replace('/[^0-9]/', '', $value);
@@ -1874,7 +1874,7 @@ class ControllerSaleOrder extends Controller {
 							// );
 							// $value_opt = preg_replace('/[^0-9]/', '', $value);
 							if(strpos($value,"(")){
-								$value_opt = preg_match("/\(\K[-\d_]+/", $value, $result) ? $result[0] : 'no match';
+								$value_opt = preg_match("/\(\K[\d]+/", $value, $result) ? $result[0] : 'no match';
 							}
 							else{
 								$value_opt = preg_replace('/[^0-9]/', '', $value);
